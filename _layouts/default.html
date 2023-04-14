@@ -1,0 +1,16 @@
+---
+layout: compressed
+container: false
+---
+{% include /components/site-header.html %}
+<h1 class="meta-description">
+    {{ site.description }}
+</h1>
+<div class="page-wrapper {% if layout.container == true %}container{% endif %}">
+    {% if page.has_nav != 'false' %}
+        {% include /components/site-navigation.html %}  
+    {% endif %}
+    {{ content }}
+    {% include /components/page-footer.html %}
+</div>
+{% include /components/site-footer.html %}

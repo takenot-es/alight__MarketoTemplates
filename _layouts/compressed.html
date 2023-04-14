@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% if site.enable_compress_html == true %} 
+        {{- content | strip_newlines | remove: '  ' -}}
+    {% else %}
+        {{ content | remove: '  ' }}
+    {% endif %}
+</html>

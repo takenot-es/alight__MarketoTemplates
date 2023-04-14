@@ -1,0 +1,19 @@
+{%- for item in site.data.enqueue_scripts | strip_newlines | remove: '  ' -%}
+    {% if item.is_local == false | strip_newlines | remove: '  '  -%}
+
+        <script src="{{ item.link }}" {% if item.integrity != null %}integrity="{{ item.integrity }}"{% endif %} {% if item.crossorigin != null %}crossorigin="{{ item.crossorigin }}"{% endif %}></script>
+
+    {% endif -%}
+    {%- if item.is_local == true | strip_newlines | remove: '  '  -%}
+        {%- if item.is_include == false -%}
+
+            <script src="/assets/js/{{ item.link }}" {% if item.integrity != null %}integrity="{{ item.integrity }}"{% endif %} {% if item.crossorigin != null %}crossorigin="{{ item.crossorigin }}"{% endif %}></script>
+
+        {% endif -%}
+    {%- endif -%}
+    {%- if item.is_include == true | strip_newlines | remove: '  '  -%}
+
+        {% include /snippets/{{item.link }} %}
+        
+    {% endif -%}
+{%- endfor -%}

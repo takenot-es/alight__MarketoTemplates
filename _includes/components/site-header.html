@@ -1,0 +1,10 @@
+<head>
+    {%- include /global/meta.html %}
+    {%- include /global/styles.html %}
+    {%- include /global/googlefonts.html %}
+    {%- include /global/analytics.html %}
+    {% if site.scripts_in_header == true %}
+    {%- include /global/scripts.html %}
+    {% endif %}
+</head>
+<body id="{% if page.title %}{{ page.title | downcase | replace: ' ', '-' }}{% else %}{{ site.title | downcase | replace: ' ', '-' }}{% endif %}" class="{{ page.layout }} {% if page.url != '/' %}{{ page.url | downcase | remove: '.html' | remove: '/' }}{% else %}index{% endif %} {% if page.background_color %}bg-{{ page.background_color }}{% endif %}">

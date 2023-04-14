@@ -1,0 +1,46 @@
+# Variables for enqueuing scripts into the site:
+# 1: title: Summary of File or Library Name. Ex: Popper
+# 2: is_local: true or false
+# 3: link: url or just the name and extenstion if `is_local` or `is_include` is true
+# 4: integrity: if needed
+# 5: crossorigin: if needed
+# 6: is_include: true or false `included files should placed into snippets`
+# 
+# 
+# 
+# 
+# 
+
+- title: Popper
+  is_local: false
+  link: https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js
+  integrity: sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3
+  crossorigin: anonymous
+  is_include: false
+- title: Bootstrap
+  is_local: false
+  link: https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js
+  integrity: sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V
+  crossorigin: anonymous
+  is_include: false
+  integrity: ha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN
+  crossorigin: anonymous
+  is_include: false
+- title: Jquery
+  is_local: true
+  link: jquery-2.1.1.js
+  integrity: null
+  crossorigin: null
+  is_include: false
+- title: Modernizr
+  is_local: true
+  link: modernizr.js
+  integrity: null
+  crossorigin: null
+  is_include: false
+- title: Swiper
+  is_local: false
+  link: https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js
+  integrity: null
+  crossorigin: null
+  is_include: false
