@@ -1,52 +1,28 @@
 ---
 layout: blocks
+description: This is a meta block. This is simply just going to the page description offset from the page in an h1 tag.
 page_sections:
-- template: raw-content
-  block: raw-content
-  headline: Meet Ursus
-  description: Build your Jekyll site now with scale in mind.
+- template: header__tradeshow-1
+  block: header__tradeshow-1
+  image: https://placehold.co/1080x1080
+  has_label: true
+  label_text: Upcoming Conference
+  indicator_color: blue
+  headline: Big headline here
+  has_subtitle: 'true'
+  subtitle: Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+- template: header__tradeshow-2
+  block: header__tradeshow-2
+  image: https://placehold.co/1080x1080
+  has_label: true
+  label_text: Upcoming Conference
+  indicator_color: blue
+  headline: Big headline here
+  has_subtitle: 'true'
+  subtitle: Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+  details:
+  - label: Short Label
+    content: This is a short content box.
+  - label: short label 2
+    content: More content is here
 ---
-
-<header class="intro-header py-5 d-flex align-items-center" style="min-height: 20vh;">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 col-12">
-        <h2 class="display-3 fw-light">
-          Meet Ursus
-        </h2>
-        <p class="h3 fw-normal">
-          Build your Jekyll site now with scale in mind.
-        </p>
-      </div>
-    </div>
-  </div>
-</header>
-<section class="py-5">
-  <div class="container">
-    <div class="row flex-md-row-reverse">
-
-      <div class="col-md-6 featured-image-container">
-        <img src="/assets/imgs/Featured_image.png" alt="{{ site.title }}" class="img-fluid">
-      </div>
-
-      <div class="col-md-4 me-auto">
-        <p class="fs-5">
-          A framework to kickstart your Jekyll sites with Bootstrap.
-        </p>
-        <hr class="short-line">
-        <p>
-          Ursus is a framework built on a system of other libraries. The goal is to create a core template to help launch Jekyll sites faster with a streamlined file structure, data files to help organize third party libraries, and pre-determined layouts and features to help build at scale. 
-        </p>
-        <p>
-          With a familiar folder structure and file set up it's easier to transition from WordPress (or any other CMS) to Jekyll and build sites as needed without convoluted, expansive, and unnecessary complex CMSs or databases.
-        </p>
-        <p class="mt-4">
-          <a href="https://github.com/takenot-es/ursus" target="_blank" class="btn btn-red">
-            Download here
-          </a>
-        </p>
-      </div>
-      
-    </div>
-  </div>
-</section>

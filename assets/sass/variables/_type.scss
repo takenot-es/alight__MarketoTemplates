@@ -1,0 +1,41 @@
+// Fonts
+$font-body:    "FSThriveElliot", "FS Thrive Elliot", system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+
+$font-weights: (100, 200, 300, 400, 500, 600, 700, 800, 900, light, normal, bold) !default;
+
+$base-font-size:        1rem;
+$base-font-weight:      400;
+$lead-font-size:        $base-font-size * $spacer-modifier;
+$lead-font-weight:      300;
+$header-font-weight:    300;
+$header-font-family:    $font-body;
+$header-line-height:    1.2;
+$header-margin:         $spacer-1;
+
+
+$display-one-font-size: clamp(3rem,5vw,4.375rem);
+$display-two-font-size: clamp(2.85rem,6vw,4rem);
+$h1-font-size:          clamp(2.5rem,6vw,3.4375rem);
+$h2-font-size:          clamp(2rem,5vw,2.875rem);
+$h3-font-size:          clamp(1.5rem,3.5vw,2rem);
+$h4-font-size:          clamp(1.25rem,2.5vw,1.625rem);
+$h5-font-size:          clamp(1.15rem, 2.25vw, 1.5rem);
+$h6-font-size:          1rem;
+$small-font-size:       14px;
+$tiny-font-size:        12px;
+
+$type-sizes: (
+    1:$display-one-font-size,
+    2:$display-two-font-size,
+    3:$h1-font-size,
+    4:$h2-font-size,
+    5:$h3-font-size,
+    6:$h4-font-size,
+    7:$h5-font-size,
+    8:$h6-font-size,
+    9:$small-font-size,
+    10:$tiny-font-size,
+) !default;
+
+$text-transforms: (uppercase, lowercase, capitalize) !default;
+$pill-label-padding: 0.3rem 0.4rem 0.2rem 0.4rem;

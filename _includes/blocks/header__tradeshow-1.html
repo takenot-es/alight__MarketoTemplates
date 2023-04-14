@@ -1,0 +1,61 @@
+{% comment %}
+    Template: Header Tradeshow 1
+    Block Tag: header__tradeshow-1
+    ---
+    Notes:
+        This the `root` tradeshow header. It gets nested into various iterations. Any changes here will be reflected OR BREAK any iteration i > 1.
+    ---
+    Front Matter Options:
+        - template: header__tradeshow-1
+          block: header__tradeshow-1
+          image: https://placehold.co/1080x1080
+          has_label: 'true' or 'false'
+          indicator_color (blue, black, yellow-100, etc)
+          label_text: text
+          headline: Text
+          has_subtitle: 'true' or 'false'
+          subtitle: Text
+    ---
+{% endcomment %}
+
+<section class="header__tradeshow">
+   <header class="background__color-yellow-100 section__radius-bottom-right">
+        <div class="container-fluid background__gradient-white-315">
+            <div class="row">
+                <div class="col-lg-6 section__padding-y d-flex align-items-center">
+                    <div class="container section__padding-y">
+                        <div class="row">
+                            <div class="col-lg-10 margin__x-auto section__padding-y">
+                                {% if section.has_label != 'false' %} 
+                                <div>
+                                    <p class="pill__label background__color-white">
+                                        <span class="pill__label-indicator background__color-{{ section.indicator_color }}">
+    
+                                        </span>
+                                        {{ section.label_text }}
+                                    </p>
+                                </div>
+                                {% endif %}
+
+                                <h2 class="type__size-1">
+                                    <em>
+                                        {{ section.headline }}
+                                    </em>
+                                </h2>
+                                {% if section.has_subtitle == 'true' %} 
+                                    <p class="type__size-6">
+                                       {{ section.subtitle }}
+                                    </p>
+                                {% endif %}
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 header__image" style="background-image: url('{{ section.image }}')">
+
+                </div>
+            </div>
+        </div>
+   </header>
+</section>

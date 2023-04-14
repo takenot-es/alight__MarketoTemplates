@@ -4,7 +4,7 @@ container: false
 ---
 {% include /components/site-header.html %}
 <h1 class="meta-description">
-    {{ site.description }}
+    {{ page.description }}
 </h1>
 <div class="page-wrapper {% if layout.container == true %}container{% endif %}">
     {% if page.has_nav != 'false' %}

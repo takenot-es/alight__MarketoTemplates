@@ -1,0 +1,15 @@
+.background__position {
+    @each $position-title, $position-value in $background-image-position {
+        &-#{$position-title} {
+            background-position: $position-value;
+        }
+    }
+}
+
+.background__size {
+    @each $size in $background-image-size {
+        &-#{$size} {
+            background-size: $size;
+        }
+    }
+}

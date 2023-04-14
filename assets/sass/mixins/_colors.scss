@@ -1,0 +1,4 @@
+@mixin gradient-background ($color, $degree) {
+    background: $color;
+    background: linear-gradient($degree, rgba($color,1) 0%, rgba($color,0) 100%);
+}

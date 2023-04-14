@@ -1,0 +1,30 @@
+@each $unit in $units {
+    @each $side in $sides {
+        @if $side == "top" or $side == "bottom" {
+            .section__#{$unit}-#{$side}, .section__#{$unit}-y, .section__#{$unit} {
+                #{$unit}-#{$side}: $spacer-5;
+            }
+
+            .section__#{$unit}-sm-#{$side}, .section__#{$unit}-sm-y, .section__#{$unit}-sm {
+                #{$unit}-#{$side}: $spacer-4;
+            }
+        }
+
+        @if $side == "left" or $side == "right" {
+            .section__#{$unit}-#{$side}, .section__#{$unit}-x, .section__#{$unit} {
+                #{$unit}-#{$side}: $spacer-5;
+            }
+
+            .section__#{$unit}-sm-#{$side}, .section__#{$unit}-sm-x, .section__#{$unit}-sm {
+                #{$unit}-#{$side}: $spacer-4;
+            }
+        }
+    }
+}
+
+@each $corner in $section-border-corners {
+    .section__radius-#{$corner}, .section__radius {
+        border-#{$corner}-radius: $section-border-radius;
+        overflow: hidden;
+    }
+}

@@ -1,0 +1,14 @@
+.header__tradeshow {
+    .header__image {
+        min-height: 75vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        @media screen and (max-width: $breakpoint-lg) {
+            min-height: 400px;
+            height: 400px;
+        }
+
+    }
+}
