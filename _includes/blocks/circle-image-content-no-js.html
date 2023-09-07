@@ -1,4 +1,4 @@
-<section class="bg-{{ section.background_color }} py-8">
+<section class="bg-{{ section.background_color }} py-8" id="{{ section.template | downcase | replace: ' ', '-' }}">
     <div class="container-fluid">
         <div class="container">
             <div class="{% if section.row_reverse == 'true' %}flex-row-reverse{% endif %} row align-items-center">

@@ -242,7 +242,7 @@ p.has-indicator:before { content: ''; height: 15px; width: 15px; background-colo
 
 .indicator-label { padding: 8px 1.5625rem 8px 3.0517578125rem; position: relative; display: inline-block; border-radius: 50rem; margin-bottom: 0; text-transform: uppercase; }
 
-.indicator-label:before { content: ''; height: 15px; width: 15px; background-color: #FFF200; border-radius: 100%; position: absolute; left: 1rem; top: 50%; transform: translateY(-50%); }
+.indicator-label:before { content: ''; height: 15px; width: 15px; background-color: #FFF200; border-radius: 100%; position: absolute; left: 1rem; top: 50%; transform: translateY(-52%); }
 
 .tracked, p.has-indicator, .indicator-label { letter-spacing: 2px; }
 

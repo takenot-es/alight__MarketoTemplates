@@ -17,6 +17,6 @@
         
     {% endif -%}
 {%- endfor -%}
-{% if page.no_json == 'true' %}
+{% if page.no_json == 'false' %}
 {% include /global/json_blocks.html json_path = page.json_data %}
 {% endif %}

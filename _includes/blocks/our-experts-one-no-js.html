@@ -1,4 +1,4 @@
-<section class="bg-slate-05 py-8">
+<section class="bg-slate-05 py-8" id="{{ section.template | downcase | replace: ' ', '-' }}">
     {% include /blocks/section-title.html bar_color=section.bar_color title=section.title subtitle=section.subtitle  %}
     <div class="container-fluid mt-4">
         <div class="container">

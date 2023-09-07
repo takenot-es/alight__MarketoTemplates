@@ -1,4 +1,4 @@
-<section class="intro-section-toc py-9">
+<section class="intro-section-toc py-9" id="{{ section.template | downcase | replace: ' ', '-' }}">
     <div class="container-fluid">
         <div class="container">
             <div class="row">
@@ -28,7 +28,7 @@
                             <ul class="row list-unstyled" id="intro-section-toc-links">
                                 {% for tocContent in section.toc_content %}
                                 <li class="col-lg-6 mb-2">
-                                    <a href="{{ tocContent.link }}">
+                                    <a href="#{{ tocContent.link }}">
                                         {{ tocContent.content }}
                                     </a>
                                 </li>
