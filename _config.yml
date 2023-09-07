@@ -7,19 +7,6 @@ logo: /assets/imgs/logo.svg
 baseurl: "" # the subpath of your site, e.g. /blog
 url: ""
 copy_year: 2023
-social:
-  - title: Twitter
-    user: takenot.es
-    url:
-  - title: Dribbble
-    user: takenot.es
-    url:
-  - title: Facebook
-    user: Ryan Underwood
-    url: 
-  - title: GitHub
-    user: takenot.es
-    url:
 
 # Placement of JS Links. Can go in header or footer or both. Boolean options true or false
 scripts_in_header: false
@@ -29,7 +16,6 @@ google_tag: G-XXXXXXXXXX
 
 sass:
   sass_dir: /assets/sass/
-  style: compressed
 
 collections: 
   pages:
@@ -46,7 +32,6 @@ compress_html:
   blanklines: false
   profile: true
   startings: [html, head, body]
-
 
 plugins:
   - jekyll-feed

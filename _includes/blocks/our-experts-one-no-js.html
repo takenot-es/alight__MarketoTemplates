@@ -1,0 +1,72 @@
+<section class="bg-slate-05 py-8">
+    {% include /blocks/section-title.html bar_color=section.bar_color title=section.title subtitle=section.subtitle  %}
+    <div class="container-fluid mt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-auto rounded py-2 px-2 bg-white">
+                    <!-- Content -->
+                    <div class="row">
+                        <div class="col-12 mb-2">
+                            <h5>
+                                <strong>
+                                    {{ section.event_title }}
+                                </strong>
+                            </h5>
+                        </div>
+                        <div class="col-lg-8">
+                            {{ section.event_content }}
+                        </div>
+                        <div class="col-auto ms-lg-auto">
+                            <ul class="list-unstyled p-0">
+                                {% for item in section.event_info %}
+                                <li class="no-icon mb-2">
+                                    <strong>
+                                        {{ item.label }}:  
+                                    </strong>
+                                    {{ item.data }}
+                                </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- End Content -->
+                    <!-- Divider -->
+                    <div class="row">
+                        <div class="col-12">
+                            <hr>
+                        </div>
+                    </div>
+                    <!-- End Divider-->
+                    <!-- Speakers -->
+                    <div class="row">
+                        <div class="col-12 py-2">
+                            <p class="has-indicator">
+                                speakers
+                            </p>
+                        </div>
+                        {% for speaker in section.event_speakers %}
+                        <div class="col-lg-6 py-2">
+                            <div class="row align-items-center">
+                                <div class="col-auto mb-2 mb-lg-0">
+                                    <figure class="speaker-headshot">
+                                        <img src="{{ speaker.headshot }}" alt="{{ speaker.name }} image">
+                                    </figure>
+                                </div>
+                                <div class="col-lg">
+                                    <p class="strong mb-0">
+                                        {{ speaker.name }}
+                                    </p>
+                                    <p>
+                                        {{ speaker.title }}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    <!-- End Speakers -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

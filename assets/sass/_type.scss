@@ -1,127 +1,269 @@
-// Base type styles are handled in _reboot.scss. This is just modifiers.
-@use "sass:math";
-.type {
-    @each $modifier, $value in $theme-colors {
-        &__color-#{$modifier} {
-            color: $value !important;
-        }
-    } 
+//
+// Headings
+//
+.h1 {
+  @extend h1;
+}
 
-    @each  $value in $font-weights {
-        &__weight-#{$value} {
-            font-weight: $value !important;
-        }
-    } 
+.h2 {
+  @extend h2;
+}
 
-    @each  $modifier, $value in $type-sizes {
-        &__size-#{$modifier} {
-            font-size: $value !important;
+.h3 {
+  @extend h3;
+}
 
-            @for $i from 1 through 7 {
-                @if $i == $modifier {
-                    line-height: 1.2;
-                    margin-bottom: $header-margin;
-                }
-            }
+.h4 {
+  @extend h4;
+}
 
-            @for $i from 1 through 4 {
-                @if $i == $modifier {
-                    font-weight: $header-font-weight;
-                }
-            }
+.h5 {
+  @extend h5;
+}
 
-        }
-    }
-
-    @each $modifier in $text-transforms {
-        &__#{$modifier} {
-            text-transform: $modifier !important;
-        }
-    }
-
+.h6 {
+  @extend h6;
 }
 
 
-.subheading {
-    &__one {
-        font-size: 20px;
-        font-weight: 400;
-        margin-bottom: $spacer-1;
-    }
-
-    &__two {
-        font-size: 14px;
-        letter-spacing: 2.8px;
-        font-weight: 700;
-        margin-bottom: $spacer-1;
-        text-transform: uppercase;
-    }
+.lead {
+  @include font-size($lead-font-size);
+  font-weight: $lead-font-weight;
 }
 
-.pill__label {
-    border-radius: $pill-border-radius;
-    padding: $pill-label-padding;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
+// Type display classes
+@each $display, $font-size in $display-font-sizes {
+  .display-#{$display} {
+    @include font-size($font-size);
+    font-family: $display-font-family;
+    font-style: $display-font-style;
+    font-weight: $display-font-weight;
+    line-height: $display-line-height;
+  }
+}
+
+//
+// Emphasis
+//
+.small {
+  @extend small;
+}
+
+.mark {
+  @extend mark;
+}
+
+.strong {
+  font-weight: $font-weight-bold;
+}
+
+.em {
+  font-style: italic;
+}
+
+//
+// Lists
+//
+
+.list-unstyled {
+  @include list-unstyled();
+}
+
+// Inline turns list items into inline-block
+.list-inline {
+  @include list-unstyled();
+}
+.list-inline-item {
+  display: inline-block;
+
+  &:not(:last-child) {
+    margin-right: $list-inline-padding;
+  }
+}
+
+
+//
+// Misc
+//
+
+// Builds on `abbr`
+.initialism {
+  @include font-size($initialism-font-size);
+  text-transform: uppercase;
+}
+
+// Blockquotes
+.blockquote {
+  margin-bottom: $blockquote-margin-y;
+  @include font-size($blockquote-font-size);
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+.blockquote-footer {
+  margin-top: -$blockquote-margin-y;
+  margin-bottom: $blockquote-margin-y;
+  @include font-size($blockquote-footer-font-size);
+  color: $blockquote-footer-color;
+
+  &::before {
+    content: "\2014\00A0"; // em dash, nbsp
+  }
+}
+
+
+.icon-list {
+  padding: 0;
+  list-style: none;
+
+  li {
+    position: relative;
+    padding-left: 1rem + $spacer-4;
+    margin-bottom: $spacer-2;
+    &:before {
+      content: '—';
+      position: absolute;
+      left: 1rem;
+      top: -2px;
+    }
+  }
+
+}
+
+ul li.no-icon {
+  &:before {
+    content: '' !important;
+  }
+}
+
+.numbered-list {
+  list-style: none;
+  counter-reset: list-counter;
+
+  li {
+    counter-increment: list-counter;
+    padding-left: $spacer-8;
+    padding-right: $spacer-4;
+    margin-bottom: $spacer-4;
+    position: relative;
+    min-height: 50px;
+
+    a {
+      color: inherit;
+      font-weight: bold;
+      transition: all .2s ease-in-out;
+      &:hover {
+        color: $yellow-100;
+      }
+    }
+
+    &:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 40px;
+      width: 40px;
+      border-radius: 100%;
+      background-color: $yellow-100;
+      content: counter(list-counter);
+      color: $black;
+      font-size: $h6-font-size;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+  }
+}
+
+.columnized-list {
+  height: 500px;
+  flex-direction: column;
+  flex-flow: column wrap;
+
+  @media screen and (max-width: $breakpoint-lg) {
     flex-direction: row;
-    text-transform: uppercase;
-    line-height: 0;
-    letter-spacing: 2px;
-    margin-bottom: $spacer-3;
-
-    p {
-        margin-bottom: 0;
-        line-height: 1;
-    }
+    flex-flow: row wrap;
+    height: 100%;
+  } 
 
 }
 
-.pill__label-indicator {
+.has-gradient-bar { 
+  margin-top: $spacer-8;
+  position: relative;
+  &:before {
+    content: '';
+    height: 8px;
+    width: 100%;
+    position: absolute;
+    top: -$spacer-4;
+    left: 0;
+  }
+
+  &.gradient-bar-{
+    @each $title, $value in $gradient-colors {
+      &#{$title} {
+        &:before {
+          background: $value;
+          background: linear-gradient(90deg, rgba($value,1) 0%, rgba($value,0) 75%);
+        }
+      }
+    }
+  }
+
+}
+
+p.has-indicator {
+  padding-left: $spacer-3;
+  position: relative;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  @extend .tracked;
+  @extend .small;
+  @extend .strong;
+
+  &:before {
+    content: '';
     height: 15px;
     width: 15px;
-    border-radius: 100rem;
-    margin-right: $spacer-1;
-    margin-bottom: $spacer-1 * .25;
+    background-color: $yellow;
+    border-radius: 100%;
+    position: absolute;
+    left: 0;
+    top: 3px;
+  }
+
 }
 
-@each $gradient-bar-title, $gradient-bar-size in $gradient-bar-sizes {
-    @each $color-title, $color-value in $core-colors {
-        @if $gradient-bar-title == "md" {
-            .gradient__bar-#{$color-title} {
-                @include gradient-bar($gradient-bar-size);
-                @include gradient-background($color-value, 45deg)
-            }
-        }
-        @else {
-            .gradient__bar-#{$gradient-bar-title}-#{$color-title} {
-                @include gradient-bar($gradient-bar-size);
-                @include gradient-background($color-value, 45deg)
-            }
-        }
-    }
+.indicator-label {
+  padding: 8px $spacer-3 8px $spacer-6;
+  position: relative;
+  display: inline-block;
+  border-radius: 50rem;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  @extend .tracked;
+  @extend .small;
+  @extend .strong;
+  
+  &:before {
+    content: '';
+    height: 15px;
+    width: 15px;
+    background-color: $yellow;
+    border-radius: 100%;
+    position: absolute;
+    left: $spacer-1;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
 }
 
-.gradient__bar-above {
-    @each $color-title, $color-value in $core-colors {
-        &-#{$color-title} {
-            @include has-gradient-bar;
-            &:before {
-                @include gradient-background($color-value, 45deg);
-                top: $gradient-bar-above-top-position;
-            }
-        }      
-    }
-}
-
-.gradient__bar-below {
-    @each $color-title, $color-value in $core-colors {
-        &-#{$color-title} {
-            @include has-gradient-bar;
-            &:before {
-                @include gradient-background($color-value, 45deg);
-                bottom: $gradient-bar-above-top-position;
-            }
-        }      
-    }
+.tracked {
+  letter-spacing: 2px;
 }

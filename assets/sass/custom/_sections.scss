@@ -1,0 +1,22 @@
+.pre-footer-image {
+    border-top-right-radius: $section-border-radius;
+    overflow: hidden;
+    height: 400px;
+    background-color: $white;
+
+    br {
+        display: none;
+    }
+
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+}
+
+section br {
+    display: none;
+}

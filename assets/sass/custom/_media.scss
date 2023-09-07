@@ -1,0 +1,42 @@
+.circular-figure {
+    display: block;
+    border-radius: 100%;
+    overflow: hidden;
+    margin-bottom: 0;
+    padding: 0;
+
+    img {
+        height: 100%;
+        width: 100%;
+        display: block;
+        object-fit: cover;
+        object-position: center;
+    }
+
+}
+
+.speaker-headshot {
+    display: block;
+    border-radius: 100%;
+    overflow: hidden;
+    margin-bottom: 0;
+    padding: 0;
+    height: 125px;
+    width: 125px;
+    
+    img {
+        height: 100%;
+        width: 100%;
+        display: block;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+.sponsor-logo-column {
+    img {
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

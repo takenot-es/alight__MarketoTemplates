@@ -1,0 +1,26 @@
+<div class="container-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="display-2 has-gradient-bar gradient-bar-{{include.bar_color }}">
+                    <em>
+                        {{ include.title }}
+                    </em>
+                </h2>
+            </div>
+        </div>
+    </div>
+</div>
+{% if section.has_subtitle == 'true' %}
+    <div class="container-fluid mt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h5>
+                        {{ include.subtitle }}
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endif %}

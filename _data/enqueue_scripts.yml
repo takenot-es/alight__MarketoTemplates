@@ -44,3 +44,9 @@
   integrity: null
   crossorigin: null
   is_include: false
+# - title: Workday Rising 2023
+#   is_local: true
+#   link: workday2023.js
+#   integrity: null
+#   crossorigin: null
+#   is_include: false

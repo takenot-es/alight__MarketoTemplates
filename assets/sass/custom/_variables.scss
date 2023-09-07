@@ -1,0 +1,30 @@
+$units: (padding, margin);
+$sides: (left, right, top, bottom); 
+
+$sizing-values: (10, 20, 30, 40, 50, 60, 70, 80, 90, 100) !default;
+
+$gradient-bar-sm: 2px;
+$gradient-bar-md: 4px;
+$gradient-bar-lg: 8px;
+
+$gradient-bar-sizes: (
+    "sm": $gradient-bar-sm,
+    "md": $gradient-bar-md,
+    "lg": $gradient-bar-lg,
+) !default;
+
+$gradient-bar-above-top-position: -$spacer-1;
+$gradient-bar-below-position:     -$spacer-1;
+$gradient-bar-left-position: 0px;
+
+$section-border-corners: (top-right, top-left, bottom-right, bottom-left) !default;
+
+$section-border-radius: clamp(50px, 6vw, 120px);
+
+$border-radius: (0, 2, 4, 8, 12, 16, 20, 24, 28, 32) !default;
+
+$pill-border-radius: 50rem;
+
+$text-transforms: (uppercase, lowercase, capitalize) !default;
+$pill-label-padding: 0.3rem 0.4rem 0.2rem 0.4rem;
+

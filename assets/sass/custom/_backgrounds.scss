@@ -1,0 +1,22 @@
+.bg {
+    @each $modifier, $value in $theme-colors {
+        &-#{$modifier} {
+            background-color: $value !important;
+        }
+    
+        @each $range in $ranges {
+            &a-#{$modifier}-#{$range} {
+                @if $range != 00 {
+                    background-color: rgba($value, $range * .01) !important;
+                }
+            }
+        }
+
+        @each $degree in $degrees {
+            &g-#{$modifier}-#{$degree} {
+                @include gradient-background ($value, #{$degree}deg);
+            }
+        }
+
+    } 
+}

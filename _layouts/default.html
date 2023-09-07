@@ -6,11 +6,10 @@ container: false
 <h1 class="meta-description">
     {{ page.description }}
 </h1>
-<div class="page-wrapper {% if layout.container == true %}container{% endif %}">
-    {% if page.has_nav != 'false' %}
-        {% include /components/site-navigation.html %}  
-    {% endif %}
-    {{ content }}
+<div class="page-wrapper {{ page.title | downcase | replace: ' ', '-' }}">
+    <main class="main-content">
+        {{ content }}
+    </main>
     {% include /components/page-footer.html %}
 </div>
 {% include /components/site-footer.html %}

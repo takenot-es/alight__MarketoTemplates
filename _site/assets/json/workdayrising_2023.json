@@ -1,0 +1,252 @@
+{
+    "pageHeader": {
+        "title": "Workday Rising 2023",
+        "featuredImage": "https://go.alight.com/rs/777-ERD-451/images/workday-rising-2023-hero.jpg"
+    },
+    "pageHeaderDetails": {
+        "details": [
+            {
+                "label": "Location:",
+                "data": "Moscone Center San Francisco, CA"
+            },
+            {
+                "label": "Dates:",
+                "data": "September 26-29, 2023"
+            },
+            {
+                "label": "Booth:",
+                "data": "Look out for Alight on the expo floor!"
+            }
+        ]
+    },
+    "introSection": {
+        "headline": "Alight + Workday: Innovating how the future works",
+        "content": "Join Alight and the wider Workday community at Workday Rising 2023 to discover the latest innovations and advancements that will bring greater value, intelligence, and efficiency to your every day. Enjoy technology showcases, immersive experiences, and customer successes all designed to help you get more value from your Workday investment.",
+        "ctaLink": "https://event.workday.com/flow/workday/rising23/WorkdayRisingReg/login",
+        "ctaText": "Register now",
+        "calloutHeadline": "You won’t want to miss these exciting activities at this year’s event!",
+        "calloutLinks": [
+            {
+                "link": "#t-shirt-vote-section",
+                "linkText": "T-shirt design voting"
+            },
+            {
+                "link": "#speaking-sessions-section",
+                "linkText": "Speaking sessions"
+            },
+            {
+                "link": "#brain-date-section",
+                "linkText": "Request a meeting"
+            },
+            {
+                "link": "#top-ten-section",
+                "linkText": "Top 10 activities"
+            },
+            {
+                "link": "#workday-services-section",
+                "linkText": "Alight's Workday Services"
+            },
+            {
+                "link": "#illuminate-lounge-section",
+                "linkText": "Illuminate Lounge"
+            }
+        ]
+
+    },
+    "votingSection": {
+        "image": "https://go.alight.com/rs/777-ERD-451/images/workday-rising-2023-t-shirts.jpg",
+        "content": "Vote for the t-shirt design you’d like to see at Workday Rising this year! Select your favorite design by September 8th and be entered into a prize drawing for priority t-shirt pick up at the Alight booth! ",
+        "ctaLink": "https://alight.typeform.com/to/NbJnkafE",
+        "ctaText": "Vote now"
+    },
+    "speakerSessions": {
+        "title": "Hear first-hand from our experts and customers",
+        "sessions": [
+            {
+                "headline": "NiSource: Unleashing the Power of Workday Extend for Enhanced Capabilities",
+                "subheadline": "Join our technical experts to explore innovation in Workday including use case development, technology evaluation, and when to build vs customise. Hear practical insights from NiSource that can be applied to your organization for transformational outcomes.",
+                "ctaLink": "https://rising.workday.com/us/catalog.html?search=remy%20mcmurray#/",
+                "ctaText": "Learn more",
+                "speakers": [
+                    {
+                        "headshot": "https://go.alight.com/rs/777-ERD-451/images/workday-rising-2023-speaker-ron-powe.jpg",
+                        "name": "Ron Powe",
+                        "jobTitle": "Manager HR Technology, NiSource"
+                    },
+                    {
+                        "headshot": "https://go.alight.com/rs/777-ERD-451/images/workday-rising-2023-speaker-ian-harris.jpg",
+                        "name": "Ian Harris",
+                        "jobTitle": "Workday Technology Leader, Alight"
+                    },
+                    {
+                        "headshot": "https://go.alight.com/rs/777-ERD-451/images/workday-rising-2023-speaker-remy-mcmurray.jpg",
+                        "name": "Remy McMurray",
+                        "jobTitle": "Workday Deployment Technology Leader, Alight"
+                    }
+                ]
+            },
+            {
+                "headline": "Mastering the Art of Payroll Excellence: Salesforce’s Path to Success",
+                "subheadline": "Join Alight and Salesforce as we explore practical recommendations to optimize your payroll operations, overcome common challenges, and ensure accurate and timely pay. Discover the answer to integrated and streamlined HR and payroll.",
+                "ctaLink": "https://rising.workday.com/us/catalog.html?search=%22Sarah%20Baxter%22#/",
+                "ctaText": "Learn more",
+                "speakers": [
+                    {
+                        "headshot": "https://go.alight.com/rs/777-ERD-451/images/workday-rising-2023-speaker-owhen-astorga.jpg",
+                        "name": "Owhen Astorga",
+                        "jobTitle": "Senior Manager, Payroll, Salesforce"
+                    },
+                    {
+                        "headshot": "https://go.alight.com/rs/777-ERD-451/images/workday-rising-2023-speaker-sarah-baxter.jpg",
+                        "name": "Sarah Baxter",
+                        "jobTitle": "Director, Payroll Services, Alight"
+                    },
+                    {
+                        "headshot": "https://go.alight.com/rs/777-ERD-451/images/workday-rising-2023-speaker-jennifer-weir.jpg",
+                        "name": "Jennifer Weir",
+                        "jobTitle": "Director, Cloud Services, Alight"
+                    }
+                ]
+            }
+        ]
+    },
+    "threeColLinkSection": {
+        "title": "Learn more about Alight's end-to-end Workday Services",
+        "links": [
+            {
+                "title": "Visit the website",
+                "url": "https://www.alight.com/partners/technology-partners/workday"                
+            },
+            {
+                "title": "Download a brochure",
+                "url": "https://alight.widen.net/content/tvfpwvjldz/pdf/Alight-%2B-Workday-Brochure_US-ENGLISH.pdf?x.portal_shortcode_generated=brqhnary&x.app=portals"                
+            },
+            {
+                "title": " Read success stories",
+                "url": "https://www.alight.com/library/case-studies"                
+            }
+        ]
+    },
+    "requestAMeeting": {
+        "title": "Let's meet!",
+        "content": "Would you like to deliver a Workday experience that improves business process efficiencies while saving time, costs, and stress? Schedule a meeting with an Alight expert to discuss your Workday challenges and see how Alight can help you get the most out of your Workday investment in HR, Finance, Payroll and Benefits.",
+        "ctaLink": "https://alight.jifflenow.com/external-request/workdayrisingnorthamerica2023/meeting-request?token=2b111b405be48a03dfad",
+        "ctaText": "Request a meeting"
+    }, 
+    "topTenSection": {
+        "title": "Top 10 exciting activities you won’t want to miss!",
+        "listItems": [
+            {
+                "content": "<div><a href='https://alight.typeform.com/to/NbJnkafE'>Vote</a> for the t-shirt design you want to see at the conference! Poll closes Sept 8!</div>"
+            },
+            {
+                "content": "<div><strong>Join</strong> us in the Illuminate Lounge for a keynote watch party, happy hour and other fun activities!</div>"
+            },
+            {
+                "content": "<div><a href='https://rising.workday.com/us/catalog.html?search=remy%20mcmurray#/'>Hear</a> from NiSource and Alight on how to innovate and elevate with tools like Workday Extend.</div>"
+            },
+            {
+                "content": "<div><strong>Relax</strong> and unwind with a sound bath and myofascial tension relief. Pick up spa gifts and more in the Alight & Workday Wellness room (located on the expo floor).</div>"
+            },
+            {
+                "content": "<div><strong>Book</strong> a Braindate with one of our talented technical experts.</div>"
+            },
+            {
+                "content": "<div><strong>Visit</strong> the Alight Booth to pick up a custom t-shirt souvenir and grab your branded goodies.</div>"
+            },
+            {
+                "content": "<div><a href='https://rising.workday.com/us/catalog.html?search=%22Sarah%20Baxter%22#/'>Gain</a> practical tips for harmonizing HR and Payroll in our breakout session.</div>"
+            },
+            {
+                "content": "<div><strong>Show</strong> your Alight spirit with a blinky badge at the Customer Appreciation Party September 28 @ 7:30 PM, located at the Chase Center.</div>"
+            },
+            {
+                "content": "<div><strong>See</strong> some of our latest and greatest Workday innovations with a demo in the Alight booth.</div>"
+            },
+            {
+                "content": "<div><a href='https://alight.jifflenow.com/external-request/workdayrisingnorthamerica2023/meeting-request?token=2b111b405be48a03dfad'>Reserve</a> time to meet with our experts to answer any questions.</div>"
+            }
+        ]
+    },
+    "illuminateLounge": {
+        "title": "Illuminate Lounge",
+        "content": "<p class='lead'>Unwind, recharge, and forge meaningful connections with like-minded customers in the Alight Illuminate Lounge. Our carefully curated space is only a 2-minute walk from Moscone and has lots of exciting activities to elevate your conference experience.</p><p class='lead'>Pop in anytime Wednesday September 26 between 11:30am and 4:30pm and Thursday September 27 from 11:30 am and 7:30pm, or reserve your spot for one of our exclusive events listed below.</p>",
+        "address": "<p class='h5 strong mb-0'>W San Francisco, 2nd floor.</p><p class='h5 strong mb-0'>181 3rd St, San Francisco, CA 94103</p>",
+        "ctaText": "Reserve your spot in the lounge",
+        "ctaLink": "",
+        "events":  [
+                { 
+                    "date": "<p class='has-indicator indicator-yellow'>Wednesday, September 27</p>",
+                    "eventsTiles": [
+                        {
+                            "classes": "py-2 px-2 rounded bg-blue h-100",
+                            "time": "7:00 AM – 7:30 AM (Waitlist)",
+                            "title": "Morning wellness activity",
+                            "byline": "&nbsp;",
+                            "content": "Ease into your day with a sound bath utilizing Crystal and Tibetan singing bowls to induce a state of ease and wonderment through the healing power of sound vibrations. Space is limited, register now."
+                        },
+                        {
+                            "classes": "py-2 px-2 rounded bg-teal h-100",
+                            "time": "8:15 AM – 10:15 AM",
+                            "title": "Breakfast & watch party",
+                            "byline": "Sponsored by Vertex",
+                            "content": "Catch our exclusive Workday Rising Keynote watch party! Limited space available — RSVP now for breakfast, a comfy viewing room, and an opportunity to connect with other Workday customers."
+                        },
+                        {
+                            "classes": "py-2 px-2 rounded bg-orange h-100",
+                            "time": "5:30 PM – 7:30 PM",
+                            "title": "INVITE ONLY: VIP Alight Illuminate Mixer",
+                            "byline": "Sponsored by Protiviti",
+                            "content": "An extraordinary evening of food, fun, and festivities!"
+                        }
+
+                    ]
+                },
+                { 
+                    "date": "<p class='has-indicator indicator-yellow'>Thursday, September 28</p>",
+                    "eventsTiles": [
+                        {
+                            "classes": "py-2 px-2 rounded bg-blue h-100",
+                            "time": "7:00 AM – 7:30 AM (Waitlist)",
+                            "title": "Morning wellness activity",
+                            "byline": "&nbsp;",
+                            "content": "Ease into your day with a sound bath utilizing Crystal and Tibetan singing bowls to induce a state of ease and wonderment through the healing power of sound vibrations. Space is limited, register now."
+                        },
+                        {
+                            "classes": "py-2 px-2 rounded bg-teal h-100",
+                            "time": "8:15 AM – 10:15 AM",
+                            "title": "Breakfast & watch party",
+                            "byline": "&nbsp;",
+                            "content": "Catch our exclusive Workday Rising Keynote watch party! Limited space available — RSVP now for breakfast, a comfy viewing room, and an opportunity to connect with other Workday customers."
+                        },
+                        {
+                            "classes": "py-2 px-2 rounded bg-orange h-100",
+                            "time": "5:30 PM – 7:30 PM",
+                            "title": "Relax and Recharge",
+                            "byline": "&nbsp;",
+                            "content": "Drop in for a little relaxation before you head out to the Customer Appreciation Party! Light bites and refreshments will be served, plus enjoy a massage, chakra reading, take your photo in the Aura photo booth, and more! No RSVP required!"
+                        }
+
+                    ]
+                }
+            ]
+    },
+    "sponsorSection": {
+         "title": "Thanks to our sponsors",
+         "logos": [
+            {
+                "companyName": "Vertex",
+                "companyLogo": "https://go.alight.com/rs/777-ERD-451/images/workday-rising-2023-sponsor-vertex.png"
+            },
+            {
+                "companyName": "Protiviti",
+                "companyLogo": "https://go.alight.com/rs/777-ERD-451/images/workday-rising-2023-sponsor-protiviti.png"
+            }
+         ]
+    },
+    "preFooterImage": {
+        "image": "https://go.alight.com/rs/777-ERD-451/images/workday-rising-2023-lounge-2.jpg"
+    }
+
+
+}

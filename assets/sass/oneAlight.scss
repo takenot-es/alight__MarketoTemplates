@@ -1,18 +1,57 @@
 ---
-# Front matter comment to ensure Jekyll properly reads file.
+## Front matter comment so Jekyll reads this file
 ---
+@use "sass:math";
+@import "mixins/banner";
+@include bsBanner("");
 
-@import "variables/variables";
-@import "mixins/mixins";
-@import "fonts";
-@import "reboot";
-@import "grid";
-@import "backgrounds";
-@import "svgs";
-@import "spacing";
-@import "type";
-@import "media";
+@import "custom/fonts";
+
+// scss-docs-start import-stack
+// Configuration
+@import "functions";
+@import "variables";
+@import "variables-dark";
+@import "maps";
+@import "mixins";
 @import "utilities";
+
+// Layout & components
+@import "root";
+@import "reboot";
+@import "type";
+@import "images";
+@import "containers";
+@import "grid";
+@import "tables";
+@import "forms";
 @import "buttons";
-@import "sections";
-@import "blocks/blocks";
+@import "transitions";
+@import "dropdown";
+@import "button-group";
+@import "nav";
+@import "navbar";
+@import "card";
+@import "accordion";
+@import "breadcrumb";
+@import "pagination";
+@import "badge";
+@import "alert";
+@import "progress";
+@import "list-group";
+@import "close";
+@import "toasts";
+@import "modal";
+@import "tooltip";
+@import "popover";
+@import "carousel";
+@import "spinners";
+@import "offcanvas";
+@import "placeholders";
+@import "custom/custom";
+// Helpers
+@import "helpers";
+
+// Utilities
+@import "utilities/api";
+// scss-docs-end import-stack

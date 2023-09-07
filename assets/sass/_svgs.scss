@@ -1,5 +1,0 @@
-@each $modifier, $value in $theme-colors {
-    svg.background__#{$modifier} {
-        fill: $value !important;
-    }
-} 

@@ -1,0 +1,19 @@
+@mixin gradient-bar($height) {
+    border: none;
+    border-width: 0;
+    height: $height;
+    display: block;
+}
+
+@mixin has-gradient-bar {
+    position: relative;
+
+    &:before {
+        content: '';
+        position: absolute;
+        height: $gradient-bar-lg;
+        width: 100%;
+        left: $gradient-bar-left-position;
+    }
+
+}

@@ -1,0 +1,103 @@
+.event-jumbotron-one {
+    overflow: hidden;
+    position: relative;
+
+    .content-container {
+        background-color: $yellow-100;
+        background: linear-gradient(153deg, rgba($yellow-100,1) 0%, rgba($white,1) 100%);
+        overflow: hidden;
+        border-bottom-right-radius: clamp(50px, 6vw, 120px);
+    }
+
+    .col-lg-6 {
+        overflow: hidden;
+        min-height: 75vh;
+        display: flex;
+
+        @media screen and (max-width: $breakpoint-lg) {
+            min-height: 50vh;
+        }
+
+    }
+
+    .page-title {
+        justify-content: center;
+        align-items: center;
+
+        .container {
+            max-width: 650px;
+        }
+    }
+
+    .featured-image-container {
+        overflow: hidden;
+        display: flex;
+        padding: 0;
+
+        img {
+            object-fit: cover;
+            object-position: center;
+            height: 100%;
+            width: 100%;
+        }
+
+    }
+
+    .rotate {
+        transform-origin: 50% 50%;
+        animation: rotation 18s infinite linear;
+        z-index: 100;
+    }
+
+    #lineArcs {
+        position: absolute;
+        top: 2rem;
+        left: 50%;
+        width: 75vw;
+    }
+
+    #lineArcs path {
+        opacity: 0.4;
+    }
+
+    @media (min-width: 768px) {
+        #lineArcs {
+            left: 70%;
+            width: 60vw; 
+        }
+        
+    }
+
+    @media (min-width: 992px) {
+        #lineArcs {
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50vw;
+        }
+    }
+
+    @keyframes rotation {
+        from {
+        transform: rotate(0deg);
+        }
+        to {
+        transform: rotate(359deg);
+        }
+    }
+
+    .rotate.countercw {
+        animation: rotationCounterCW 18s infinite linear;
+    }
+
+    @keyframes rotationCounterCW {
+        from {
+        transform: rotate(359deg);
+        }
+        to {
+        transform: rotate(0deg);
+        }
+    }
+
+
+}

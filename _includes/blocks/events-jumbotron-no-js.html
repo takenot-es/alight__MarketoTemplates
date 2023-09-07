@@ -1,0 +1,41 @@
+<header class="event-jumbotron-one bg-slate-100" id="event-jumbotron-one">
+    <div class="container-fluid content-container">
+        <div class="row">
+            <div class="col-lg-6 page-title has-event-jumbotron-page-title" id="event-jumbotron-page-title">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-10 mx-auto">
+                            <h2 class="display-2">
+                                <em>
+                                    {{ section.headline }}
+                                </em>
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 featured-image-container has-eventjumbtron-featured-image" id="event-jumbotron-featured-image">
+                <img src="{{ section.image_url }}" alt="{{ page.title }}">
+            </div>
+        </div>
+    </div>
+    <svg id="lineArcs" viewBox="0 0 575 575" fill="none" xmlns="http://www.w3.org/2000/svg">                         <path class="arc rotate" d="M178.466 137.427C202.149 120.221 229.568 108.863 258.481 104.284C287.395 99.7044 316.982 102.033 344.823 111.079C372.664 120.125 397.969 135.632 418.668 156.332C439.368 177.031 454.875 202.336 463.921 230.177C472.967 258.018 475.296 287.605 470.716 316.519C466.137 345.432 454.779 372.851 437.573 396.534C420.366 420.217 397.798 439.492 371.715 452.782C345.632 466.072 316.774 473 287.5 473" stroke-linecap="round" stroke="white" stroke-width="4"></path>                         <path class="arc rotate countercw" d="M287 419C260.893 419 235.372 411.258 213.665 396.754C191.957 382.25 175.039 361.634 165.048 337.514C155.057 313.394 152.443 286.854 157.536 261.248C162.63 235.643 175.201 212.122 193.662 193.662C212.122 175.201 235.643 162.63 261.248 157.536C286.854 152.443 313.394 155.057 337.514 165.048C361.634 175.039 382.25 191.957 396.754 213.665C411.258 235.372 419 260.893 419 287" stroke-linecap="round" stroke="white" stroke-width="4"></path>                         <path class="arc rotate" d="M523 287.5C523 321.542 515.62 355.179 501.368 386.094C487.116 417.009 466.331 444.467 440.445 466.576C414.559 488.684 384.188 504.918 351.424 514.158C318.66 523.399 284.283 525.426 250.66 520.101C217.037 514.775 184.968 502.224 156.663 483.311C128.358 464.398 104.49 439.574 86.7032 410.548C68.9163 381.523 57.6336 348.986 53.6324 315.18C49.6312 281.374 53.0066 247.102 63.5262 214.727" stroke-linecap="round" stroke="white" stroke-width="4"></path>                         <path class="arc rotate countercw" d="M16.3451 198.14C29.2623 158.944 50.5237 123.014 78.6641 92.8264C106.805 62.6387 141.155 38.9107 179.349 23.2773C217.543 7.64386 258.672 0.476666 299.903 2.26954C341.134 4.06241 381.485 14.7727 418.178 33.6625C454.871 52.5523 487.032 79.1725 512.446 111.689C537.86 144.205 555.922 181.845 565.388 222.014C574.854 262.184 575.499 303.928 567.279 344.37C559.058 384.813 542.167 422.992 517.77 456.278" stroke-linecap="round" stroke="white" stroke-width="4"></path>                     </svg>
+</header>
+<section class="py-5 px-lg-6 px-1 bg-slate-100 text-white">
+    <div class="container-fluid">
+        <div class="row" id='event-page-header-details'>
+            {% for listItem in section.details %}
+            <div class="col-lg-3 py-2 mb-2 mb-lg-0 mx-auto">
+                <p class="mb-0 text-uppercase small tracked">
+                    {{ listItem.label | append: '&colon;' }}
+                </p>
+                <h5>
+                    <strong>
+                        {{ listItem.information }}
+                    </strong>
+                </h5>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

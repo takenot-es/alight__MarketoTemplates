@@ -1,0 +1,58 @@
+.box-icon-link {
+    color: $white;
+    text-decoration: none;
+    background-color: $black;
+    padding: $spacer-4;
+    @extend .rounded;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    z-index: 10;
+    transition: all .5s ease-in-out;
+
+    &:after {
+        content: 'arrow_forward';
+        font-family: $font-family-icons;
+        -webkit-font-feature-settings: 'liga';
+        font-feature-settings: 'liga';
+        height: 40px;
+        width: 40px;
+        color: $black;
+        background-color: $yellow-100;
+        position: absolute;
+        right: $spacer-4;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100%;
+        transition: all .6s ease-in-out;
+    }
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        background-color: $yellow-100;
+        z-index: -1;
+        transition: all .3s ease-in-out;
+    }  
+
+    &:hover {
+        color: $black;
+
+        &:before {
+            width: 100%;
+        }
+
+        &:after {
+            color: $yellow-100;
+            background-color: $black;
+        }
+
+    }
+}

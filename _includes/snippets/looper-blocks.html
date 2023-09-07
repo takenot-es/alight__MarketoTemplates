@@ -1,3 +1,5 @@
-{%- for section in page.page_sections -%}
-    {% include /blocks/{{ section.block }}.html -%}
-{%- endfor %}
+{% for section in page.page_sections %}
+<!-- Start {{ section.template }} -->
+    {% include /blocks/{{ section.block }}.html %}
+<!-- End {{ section.template }} -->
+{% endfor %}
