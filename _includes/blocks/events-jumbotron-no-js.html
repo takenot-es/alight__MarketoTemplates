@@ -5,6 +5,11 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
+                            {% if section.pill_label == 'true' %}
+                            <p class="indicator-label indicator-blue bg-slate-10">
+                                {{ section.pill_label_content }}
+                            </p>
+                            {% endif %}
                             <h2 class="display-2">
                                 <em>
                                     {{ section.headline }}
