@@ -32,11 +32,13 @@
                         </em>
                     </h2>
                     {{ section.content }}
+                    {% if section.has_button == 'true' %}
                     <p class="mt-4">
                         <a href="{{ section.cta_link }}" class="btn btn-black" target="_blank">
                             {{ section.cta_text}}
                         </a>
                     </p>
+                    {% endif %}
                 </div>
             </div>
         </div>

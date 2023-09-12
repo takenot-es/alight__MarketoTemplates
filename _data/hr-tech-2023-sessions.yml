@@ -1,70 +1,66 @@
-- date: Wednesday, October 11
+- date: 'Wednesday, October 11'
   tile: 'blue'
   events:
-    - title: 'How AI Can Power Employee Wellbeing'
-      times: 
-      - '10:00 AM – 10:15 AM'
-      - '2:00 PM – 2:15 PM'
-    - title: 'Setting New Employees Up for Success with a Better Onboarding Experience'
-      times: 
-      - '10:30 AM – 10:45 AM'
-      - '2:30 PM – 2:45 PM'
-    - title: 'Why Is It So Hard to Track Employee Leaves and How Can I Make it Easier?'
-      times: 
-      - '11:00 AM – 11:15 AM'
-      - '3:00 PM – 3:15 PM'
-    - title: 'Taking the Pain out of Payroll and Uncovering Strategic Insights'
+    - title: 'How AI can power employee wellbeing'
       times:
-      - '11:30 AM - 11:45 AM'
+      - '10:00 am - 10:15 am'
+      - '2:00 PM - 2:15 PM'
+    - title: 'Setting new employees up for success with a better onboarding experience'
+      times:
+      - '10:30 am - 10:45 am'
+      - '2:30 PM - 2:45 PM'
+    - title: 'Why is it so hard to track employee leaves and how can I make it easier?'
+      times:
+      - '11:00 am - 11:15 am'
+      - '3:00 PM - 3:15 PM'
+    - title: 'Taking the pain out of payroll and uncovering strategic insights'
+      times:
+      - '11:30 am - 11:45 am'
       - '3:30 PM - 3:45 PM'
-    - title: 'Get Inclusive with Financial Wellbeing: Do Your DE&I Objectives Address Wealth and Retirement?'
-      times: 
-      - '12:00 PM – 12:15 PM'
-      - '4:00 PM – 4:15 PM'
-    - title: 'When People Need Help: Supporting Your People During Moments that Matter'
-      times: 
-      - '12:30 PM – 12:45 PM'
-      - '4:30 PM – 4:45 PM'
-    - title: 'Getting It Right: How to Optimize Your HR Tech Investment'
-      times: 
-      - '1:00 PM – 1:15 PM'
-      - '5:00 PM – 5:15 PM'
-    - title: 'Take Care of Your Retirees AND Fulfill Your Fiduciary Responsibility'
-      times: 
-      - '1:30 PM – 1:45 PM'
-      - '5:30 PM – 5:45 PM'
-- date: Thursday, October 12
+    - title: 'Get inclusive with financial wellbeing: do your DE&I objectives address wealth and retirement?'
+      times:
+      - '12:00 PM - 12:15 PM'
+      - '4:00 PM - 4:15 PM'
+    - title: 'When people need help: supporting your people during moments that matter'
+      times:
+      - '12:30 PM - 12:45 PM'
+      - '4:30 PM - 4:45 PM'
+    - title: 'Getting it right: how to optimize your HR tech investment'
+      times:
+      - '1:00 PM - 1:15 PM'
+      - '5:00 PM - 5:15 PM'
+    - title: 'Take care of your retirees and fulfill your fiduciary responsibility'
+      times:
+      - '1:30 PM - 1:45 PM'
+      - '5:30 PM - 5:45 PM'
+- date: 'Thursday, October 12'
   tile: 'teal'
   events:
-    - title: 'How AI Can Power Employee Wellbeing'
-      times: 
-      - '10:00 AM – 10:15 AM'
-      - '2:00 PM – 2:15 PM'
-    - title: 'Setting New Employees Up for Success with a Better Onboarding Experience'
-      times: 
-      - '10:30 AM – 10:45 AM'
-      - '2:30 PM – 2:45 PM'
-    - title: 'Why Is It So Hard to Track Employee Leaves and How Can I Make it Easier?'
-      times: 
-      - '11:00 AM – 11:15 AM'
-      - '3:00 PM – 3:15 PM'
-    - title: 'Taking the Pain out of Payroll and Uncovering Strategic Insights'
+    - title: 'How AI can power employee wellbeing'
       times:
-      - '11:30 AM - 11:45 AM'
-      - '3:30 PM - 3:45 PM'
-    - title: 'Get Inclusive with Financial Wellbeing: Do Your DE&I Objectives Address Wealth and Retirement?'
-      times: 
-      - '12:00 PM – 12:15 PM'
-      - '4:00 PM – 4:15 PM'
-    - title: 'When People Need Help: Supporting Your People During Moments that Matter'
-      times: 
-      - '12:30 PM – 12:45 PM'
-      - '4:30 PM – 4:45 PM'
-    - title: 'Getting It Right: How to Optimize Your HR Tech Investment'
-      times: 
-      - '1:00 PM – 1:15 PM'
-      - '5:00 PM – 5:15 PM'
-    - title: 'Take Care of Your Retirees AND Fulfill Your Fiduciary Responsibility'
-      times: 
-      - '1:30 PM – 1:45 PM'
-      - '5:30 PM – 5:45 PM'
+      - '10:00 am - 10:15 am'
+      - '2:00 PM - 2:15 PM'
+    - title: 'Setting new employees up for success with a better onboarding experience'
+      times:
+      - '10:30 am - 10:45 am'
+      - '2:30 PM - 2:45 PM'
+    - title: 'Why is it so hard to track employee leaves and how can I make it easier?'
+      times:
+      - '11:00 am - 11:15 am'
+      - '3:00 PM - 3:15 PM'
+    - title: 'Taking the pain out of payroll and uncovering strategic insights'
+      times:
+        - '11:30 am - 11:45 am'
+        - '3:30 PM - 3:45 PM'
+    - title: 'Get inclusive with financial wellbeing: do your DE&I objectives address wealth and retirement?'
+      times:
+      - '12:00 PM - 12:15 PM'
+    - title: 'When people need help: supporting your people during moments that matter'
+      times:
+      - '12:30 PM - 12:45 PM'
+    - title: 'Getting it right: how to optimize your HR tech investment'
+      times:
+      - '1:00 PM - 1:15 PM'
+    - title: 'Take care of your retirees and fulfill your fiduciary responsibility'
+      times:
+      - '1:30 PM - 1:45 PM'
