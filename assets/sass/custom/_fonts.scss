@@ -54,6 +54,33 @@
     src: url("https://go.alight.com/rs/777-ERD-451/images/FSThriveElliot-Heavy.woff2") format("woff2"), url("https://go.alight.com/rs/777-ERD-451/images/FSThriveElliot-Heavy.eot?#iefix") format("embedded-opentype"), url("https://go.alight.com/rs/777-ERD-451/images/FSThriveElliot-Heavy.woff") format("woff"), url("https://go.alight.com/rs/777-ERD-451/images/FSThriveElliot-Heavy.ttf") format("truetype"), url("https://go.alight.com/rs/777-ERD-451/images/FSThriveElliot-Heavy.svg#FSThriveElliot-Heavy") format("svg")
 }
 
+@font-face {
+    font-family: 'ChartwellBars';
+    src: url('/assets/fonts/ChartwellBars.eot');
+    src: url('/assets/fonts/ChartwellBars.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/ChartwellBars.woff2') format('woff2'),
+        url('/assets/fonts/ChartwellBars.woff') format('woff'),
+        url('/assets/fonts/ChartwellBars.ttf') format('truetype'),
+        url('/assets/fonts/ChartwellBars.svg#ChartwellBars') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ChartwellPies';
+    src: url('/assets/fonts/ChartwellPies.eot');
+    src: url('/assets/fonts/ChartwellPies.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/ChartwellPies.woff2') format('woff2'),
+        url('/assets/fonts/ChartwellPies.woff') format('woff'),
+        url('/assets/fonts/ChartwellPies.ttf') format('truetype'),
+        url('/assets/fonts/ChartwellPies.svg#ChartwellPies') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined");
 /* fallback */
 @font-face {

@@ -16,6 +16,10 @@
 
 @font-face { font-family: "FSThriveElliot"; font-weight: 900; font-display: block; font-style: normal; src: url("https://go.alight.com/rs/777-ERD-451/images/FSThriveElliot-Heavy.woff2") format("woff2"), url("https://go.alight.com/rs/777-ERD-451/images/FSThriveElliot-Heavy.eot?#iefix") format("embedded-opentype"), url("https://go.alight.com/rs/777-ERD-451/images/FSThriveElliot-Heavy.woff") format("woff"), url("https://go.alight.com/rs/777-ERD-451/images/FSThriveElliot-Heavy.ttf") format("truetype"), url("https://go.alight.com/rs/777-ERD-451/images/FSThriveElliot-Heavy.svg#FSThriveElliot-Heavy") format("svg"); }
 
+@font-face { font-family: 'ChartwellBars'; src: url("/assets/fonts/ChartwellBars.eot"); src: url("/assets/fonts/ChartwellBars.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/ChartwellBars.woff2") format("woff2"), url("/assets/fonts/ChartwellBars.woff") format("woff"), url("/assets/fonts/ChartwellBars.ttf") format("truetype"), url("/assets/fonts/ChartwellBars.svg#ChartwellBars") format("svg"); font-weight: normal; font-style: normal; font-display: swap; }
+
+@font-face { font-family: 'ChartwellPies'; src: url("/assets/fonts/ChartwellPies.eot"); src: url("/assets/fonts/ChartwellPies.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/ChartwellPies.woff2") format("woff2"), url("/assets/fonts/ChartwellPies.woff") format("woff"), url("/assets/fonts/ChartwellPies.ttf") format("truetype"), url("/assets/fonts/ChartwellPies.svg#ChartwellPies") format("svg"); font-weight: normal; font-style: normal; font-display: swap; }
+
 /* fallback */
 @font-face { font-family: 'Material Symbols Outlined'; font-style: normal; font-weight: 400; src: url(https://fonts.gstatic.com/s/materialsymbolsoutlined/v132/kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzaxHMPdY43zj-jCxv3fzvRNU22ZXGJpEpjC_1v-p_4MrImHCIJIZrDCvHOejbd5zrDAt.woff2) format("woff2"); }
 
@@ -4352,6 +4356,44 @@ section br { display: none; }
 
 .form-modal.show { display: block; opacity: 1; position: fixed; top: 0; right: 0; left: 0; bottom: 0; height: 100vh; width: 100vw; background-color: #FFF200; z-index: 10000; transform: translateX(0); transition: all .3s ease-in-out; }
 
+:root { --chart-card-background: #0A2029; --chart-card-text:      #FFFFFF; --chart-color-1: #F2F2F2; --chart-color-2: #FF9966; --chart-color-3: #8FE4DE; --chart-color-4: #A1C4FD; --chart-color-5: #C4ABDA; --chart-color-6: #FFF200; }
+
+.chart-section.bg-slate, .chart-section.bg-dark { --chart-card-background: #FFFFFF; --chart-color-1: #0A2029; --chart-card-text: #000000; color: #FFFFFF; }
+
+.pie-chart { font-family: "ChartwellPies"; font-variant-ligatures: discretionary-ligatures; font-size: 250px; line-height: .7; margin: 0; color: var(--chart-card-background); }
+
+.pie-chart > p span:nth-child(1) { color: var(--chart-color-1); }
+
+.pie-chart > p span:nth-child(2) { color: var(--chart-color-2); }
+
+.pie-chart > p span:nth-child(3) { color: var(--chart-color-3); }
+
+.pie-chart > p span:nth-child(4) { color: var(--chart-color-4); }
+
+.pie-chart > p span:nth-child(5) { color: var(--chart-color-5); }
+
+.pie-chart > p span:nth-child(6) { color: var(--chart-color-6); }
+
+.chart-style-1 .chart-card { background-color: var(--chart-card-background); border-radius: 1rem; padding: 1.25rem 1.5625rem 1.25rem 1.25rem; }
+
+.chart-style-1 .chart-card .legend { color: var(--chart-card-text); padding: 0; }
+
+.chart-style-1 .chart-card .legend li { padding-left: 1.5625rem; margin-bottom: 1rem; position: relative; }
+
+.chart-style-1 .chart-card .legend li:before { content: ''; height: 16px; width: 16px; border-radius: 2px; background-color: black; position: absolute; left: 0; top: 2px; }
+
+.chart-style-1 .chart-card .legend li:nth-child(1):before { background-color: var(--chart-color-1); }
+
+.chart-style-1 .chart-card .legend li:nth-child(2):before { background-color: var(--chart-color-2); }
+
+.chart-style-1 .chart-card .legend li:nth-child(3):before { background-color: var(--chart-color-3); }
+
+.chart-style-1 .chart-card .legend li:nth-child(4):before { background-color: var(--chart-color-4); }
+
+.chart-style-1 .chart-card .legend li:nth-child(5):before { background-color: var(--chart-color-5); }
+
+.chart-style-1 .chart-card .legend li:nth-child(6):before { background-color: var(--chart-color-6); }
+
 .clearfix::after { display: block; clear: both; content: ""; }
 
 .text-bg-primary { color: #000 !important; background-color: RGBA(255, 242, 0, var(--bs-bg-opacity, 1)) !important; }
@@ -5358,7 +5400,7 @@ section br { display: none; }
 
 .py-0 { padding-top: 0 !important; padding-bottom: 0 !important; }
 
-.py-1 { padding-top: 1rem !important; padding-bottom: 1rem !important; }
+.py-1, .chart-style-1 .chart-card .legend { padding-top: 1rem !important; padding-bottom: 1rem !important; }
 
 .py-2 { padding-top: 1.25rem !important; padding-bottom: 1.25rem !important; }
 

@@ -1,0 +1,43 @@
+<section class="bg-{{ section.background_color }} py-7 chart-section chart-style-1">
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                {% if section.title != null %}
+                <div class="col-lg-8 mb-3">
+                    <h2>
+                        {{ section.title }}
+                    </h2>
+                </div>
+                {% endif %}
+                <div class="col-lg-6">
+                    {{ section.content }}
+                </div>
+                <div class="col-auto ms-lg-auto">
+                    <div class="chart-card w-auto">
+                        <div class="row">
+                            <div class="col-auto">
+                                <div class="pie-chart">
+                                    <p>
+                                        {%- for item in section.chart_values -%}
+                                            {{- item.value | prepend: "<span>" | append: "+</span>" -}}
+                                            {%- if forloop.last -%}t{%- endif -%}
+                                        {%- endfor -%}
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-lg col-auto">
+                                <ul class="list-unstyled legend">
+                                    {%- for item in section.chart_values -%}
+                                        <li>
+                                            {{- item.title -}}
+                                        </li>
+                                    {%- endfor -%}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

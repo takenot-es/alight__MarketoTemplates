@@ -21,6 +21,9 @@ collections:
   pages:
     output: true
     permalink: /:title/
+  emails:
+    output: true
+    permalink: /emails/:title/
 
 enable_compress_html: false
 compress_html:

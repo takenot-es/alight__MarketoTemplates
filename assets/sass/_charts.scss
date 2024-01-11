@@ -1,0 +1,84 @@
+:root {
+    --chart-card-background: #{$slate};
+    --chart-card-text:      #{$white};
+    @each $child, $value in $chart-colors {
+        --chart-color-#{$child}: #{$value};
+    }
+}
+
+@mixin chart-colors-children {
+    @each $child, $value in $chart-colors {
+        span:nth-child(#{$child}) {
+            color: var(--chart-color-#{$child});
+        }
+    }
+}
+
+@mixin legends-children {
+    @each $child, $value in $chart-colors {
+        li:nth-child(#{$child}) {
+          &:before {
+            background-color: var(--chart-color-#{$child});
+          }  
+        }
+    }
+}
+
+.chart-section {
+    &.bg-slate, &.bg-dark {
+        --chart-card-background: #{$white};
+        --chart-color-1: #{$slate};
+        --chart-card-text: #{$black};
+        color: $white;
+    }
+}
+
+.pie-chart {
+    font-family: $pie-chart-font;
+    font-variant-ligatures: discretionary-ligatures;
+    font-size: 250px;
+    line-height: .7;
+    margin: 0;
+    color: var(--chart-card-background);
+
+    > p {
+        @include chart-colors-children();
+    }
+}
+
+.chart-style-1 {
+
+    .chart-card {
+        background-color: var(--chart-card-background);
+        border-radius: $spacer-1;
+        padding: $spacer-2 $spacer-3 $spacer-2 $spacer-2;
+
+        .legend {
+            color: var(--chart-card-text);
+            padding: 0;
+            @extend .py-1;
+
+            li {
+                padding-left: $spacer-3;
+                margin-bottom: $spacer-1;
+                position: relative;
+
+                &:before {
+                    content: '';
+                    height: 16px;
+                    width: 16px;
+                    border-radius: 2px;
+                    background-color: black;
+                    position: absolute;
+                    left: 0;
+                    top: 2px;
+                }
+
+            }
+
+            @include legends-children();
+
+        }
+
+    }
+}
