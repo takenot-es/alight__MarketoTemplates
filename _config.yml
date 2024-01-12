@@ -23,7 +23,18 @@ collections:
     permalink: /:title/
   emails:
     output: true
-    permalink: /emails/:title/
+    permalink: /:collection/:categories/:title/
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "emails" # previously `post` in Jekyll 2.2.
+    values:
+      layout: "email"
+      categories:
+        - Alight
+        - ryanUnderwood
 
 enable_compress_html: false
 compress_html:
