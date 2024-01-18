@@ -28,13 +28,13 @@ collections:
 defaults:
   -
     scope:
-      path: "" # an empty string here means all files in the project
-      type: "emails" # previously `post` in Jekyll 2.2.
+      path: "" 
+      type: "emails"
     values:
       layout: "email"
       categories:
-        - Alight
-        - ryanUnderwood
+        - "Alight"
+        - "ryanUnderwood"
 
 enable_compress_html: false
 compress_html:
