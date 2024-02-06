@@ -1,4 +1,4 @@
-<section class="py-4 py-md-6" id="{{ section.title | downcase | replace: ' ', '-' }}">
+<section class="py-4 py-md-8" id="{{ section.title | downcase | replace: ' ', '-' }}">
     <div class="container">
         {% if section.headline %}
         <div class="row pb-4">
@@ -35,6 +35,13 @@
             </div>
             <div class="col-lg-6">
                 {{ section.content }}
+                {% if section.cta %}
+                <p class="mt-4">
+                    <a href="{% if section.cta_link contains 'id--' %}{{ section.cta_link | remove: 'id--' | prepend: '#' }}{% else %}{{section.cta_link }}{% endif %}" class="btn btn-primary">
+                        {{ section.cta }}
+                    </a>
+                </p>
+                {% endif %}
             </div>
         </div>
     </div>

@@ -22,7 +22,7 @@
     {% include /snippets/arc-animated.svg %}
 </section>
 {% if section.info_container == 'true' or section.info_container == true %}
-<section class="py-5 bg-slate-100 text-white">
+<section class="py-4 py-md-6 bg-slate-100 text-white">
     <div class="container">
         <div class="row" id="event-page-header-details">
             {% for item in section.info_details %}
@@ -33,7 +33,7 @@
                 </p>
                 <h5>
                     <strong>
-                        {{ item. content }}
+                        {{ item.content }}
                     </strong>
                 </h5>
              </div>
@@ -44,7 +44,7 @@
                 </p>
                 <h5>
                     <strong>
-                        {{ item. content }}
+                        {{ item.content }}
                     </strong>
                 </h5>
              </div>
