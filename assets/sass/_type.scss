@@ -204,6 +204,21 @@ ul li.no-icon {
     left: 0;
   }
 
+  &.gradient-bar-bottom {
+    margin-top: 0;
+    margin-bottom: $spacer-4; 
+
+    &:before {
+      content: '';
+      height: 8px;
+      width: 100%;
+      position: absolute;
+      top: 120%;
+      left: 0;
+    }
+
+  }
+
   &.gradient-bar-{
     @each $title, $value in $gradient-colors {
       &#{$title} {

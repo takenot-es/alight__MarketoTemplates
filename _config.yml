@@ -21,20 +21,6 @@ collections:
   pages:
     output: true
     permalink: /:title/
-  emails:
-    output: true
-    permalink: /:collection/:categories/:title/
-
-defaults:
-  -
-    scope:
-      path: "" 
-      type: "emails"
-    values:
-      layout: "email"
-      categories:
-        - "Alight"
-        - "ryanUnderwood"
 
 enable_compress_html: false
 compress_html:
