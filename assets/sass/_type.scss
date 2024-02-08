@@ -25,6 +25,10 @@
   @extend h6;
 }
 
+p, section {
+  color: var(--bs-body-color);
+}
+
 
 .lead {
   @include font-size($lead-font-size);

@@ -1,5 +1,5 @@
 .bg {
-    @each $modifier, $value in $theme-colors {
+    @each $modifier, $value in $core-colors {
         &-#{$modifier} {
             background-color: $value !important;
         }

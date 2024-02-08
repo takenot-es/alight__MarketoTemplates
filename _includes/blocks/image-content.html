@@ -1,0 +1,85 @@
+{% assign dark_theme_bg = site.dark_theme_backgrounds %}
+
+{% capture ic_background_color %}
+    bg-{{ section.background_color }}
+{% endcapture %}
+
+
+{% capture ic_bg_dark_theme %}
+    {% for value in dark_theme_bg %}
+        {% if section.background_color == value %}
+            data-bs-theme="dark"
+        {% endif %}
+    {% endfor %}
+{% endcapture %}
+
+{% capture row_direction %}
+    {% if section.image_right or section.image_right == 'true' %}
+        row flex-row-reverse
+        {% else %}
+        row
+    {% endif %}
+{% endcapture %}
+
+{% capture ic_content_column_margin %}
+    {% if section.image_right or section.image_right == 'true' %}
+        me-md-auto
+        {% else %}
+        ms-md-auto
+    {% endif %}
+{% endcapture %}
+
+{% capture ic_cta %}
+
+    {% capture ic_cta_id %}
+        {% if section.cta_link contains 'id--' %}
+            {{ section.cta_link | replace: 'id--', '#' }}
+        {% else %}
+            {{ section.cta_link }}
+        {% endif %}
+    {% endcapture %}
+   
+    {% capture ic_cta_style %}
+        {% for value in dark_theme_bg %}
+            {% if section.background_color == value %}
+                btn-yellow
+            {% else %}
+                btn-black
+            {% endif %}
+        {% endfor %}
+    {% endcapture %}
+
+    {% if section.cta %}
+    <p class="mt-2 mb-0">
+        <a href="{{ ic_cta_id }}" class="btn {{ ic_cta_style }}">
+            {{ section.cta }}
+        </a>
+    </p>
+    {% endif %}
+{% endcapture %}
+
+
+<section class="py-4 py-md-6 {{ ic_background_color | strip_newlines }}" id="{{ section.title | downcase | replace: ' ', '-'}}" {{ ic_bg_dark_theme }}>
+    <div class="container">
+        <div class="{{ row_direction | strip_newlines }}">
+            <div class="col-auto mb-2 mb-lg-0 mx-auto mx-lg-0 d-flex align-items-center justify-content-center">
+                <figure class="circular-figure" style="height: 350px; width: 350px;">
+                    <img src="https://go.alight.com/rs/777-ERD-451/images/hr-tech-2023-coffee-photo.jpg" alt="">
+                </figure>
+            </div>
+            <div class="col-lg-7 {{ ic_content_column_margin | strip_newlines }}">
+                <div class="d-flex flex-column justify-content-center py-4 h-100">
+                    {% if section.headline %}
+                <h2 class="display-2 has-gradient-bar gradient-bar-yellow">
+                    <em>
+                        {{ section.headline }}
+                    </em>
+                </h2>
+                {% endif %}
+                {{ section.content }}
+                {{ ic_cta }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

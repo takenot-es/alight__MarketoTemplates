@@ -207,12 +207,13 @@ $black-20: #CCCCCC;
 $black-10: #E5E5E5;
 $black-00: #FFFFFF;
 $white: #FFFFFF;
+$yellow: $yellow-100;
 $slate: $slate-100;
 $orange: #FF9966;
 $teal: #8FE4DE;
 $blue: #A1C4FD;
 $purple: #C4ABDA;
-$light: #F2F2F2;
+$light: $slate-05;
 
 //Opacity Ranges
 $ranges: (00, 05, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95) !default;
@@ -241,6 +242,7 @@ $theme-colors: (
   "info":       $info,
   "warning":    $warning,
   "danger":     $danger,
+  "dark":       $dark,
   "yellow-100": $yellow-100, 
   "yellow-50": $yellow-50, 
   "yellow-40": $yellow-40, 
@@ -258,7 +260,7 @@ $theme-colors: (
   "slate-20": $slate-20, 
   "slate-10": $slate-10, 
   "slate-05": $slate-05, 
-  "black": $black,
+  "black": $dark,
   "black-100": $black, 
   "black-90": $black-90, 
   "black-80": $black-80, 
@@ -271,7 +273,9 @@ $theme-colors: (
   "black-10": $black-10, 
   "black-00": $black-00, 
   "white": $white, 
-  "slate": $slate, 
+  "slate": $slate,
+  "light-slate": $slate-90,
+  "yellow": $yellow,
   "orange": $orange, 
   "teal": $teal, 
   "blue": $blue, 
@@ -280,9 +284,11 @@ $theme-colors: (
 ) !default;
 
 $core-colors: (
-    "yellow-100": $yellow-100,
-    "slate-100": $slate-100,
+    "yellow": $yellow-100,
+    "slate": $slate-100,
+    "light-slate": $slate-90,
     "black": $black,
+    "dark": $dark,
     "white": $white,
     "orange": $orange,
     "teal": $teal,

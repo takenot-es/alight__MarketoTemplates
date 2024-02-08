@@ -22,27 +22,27 @@
     {% include /snippets/arc-animated.svg %}
 </section>
 {% if section.info_container == 'true' or section.info_container == true %}
-<section class="py-4 py-md-6 bg-slate-100 text-white">
+<section class="py-4 py-md-6 bg-slate-100" data-bs-theme="dark">
     <div class="container">
         <div class="row" id="event-page-header-details">
             {% for item in section.info_details %}
             {% if forloop.length > 2 %}
-            <div class="col-lg-4 mx-auto py-1 mb-1 mb-lg-0">
+            <div class="col-md-4 mx-auto py-1 mb-1 mb-lg-0">
                 <p class="mb-0 text-uppercase small tracked">
                     {{ item.label | append: ':' }}
                 </p>
-                <h5>
+                <h5 class="mb-0">
                     <strong>
                         {{ item.content }}
                     </strong>
                 </h5>
              </div>
              {% else %}
-             <div class="col-lg-6 py-1 mb-1 mb-lg-0">
+             <div class="col-md-6 py-1 mb-1 mb-lg-0">
                 <p class="mb-0 text-uppercase small tracked">
                     {{ item.label | append: ':' }}
                 </p>
-                <h5>
+                <h5 class="mb-0">
                     <strong>
                         {{ item.content }}
                     </strong>
