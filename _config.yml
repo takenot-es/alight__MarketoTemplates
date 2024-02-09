@@ -26,9 +26,9 @@ description: From hire to retire, and beyond, your people depend on you for reso
   insights. Drive better outcomes for your people and for your business.
 favicon: https://www.alight.com/favicon.ico
 logo: "/assets/imgs/logo.svg"
-baseurl: ''
-url: ''
-copy_year: 2023
+baseurl: 
+url: 
+copy_year: 2024
 scripts_in_header: false
 scripts_in_footer: true
 google_tag: G-XXXXXXXXXX
