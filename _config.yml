@@ -2,6 +2,9 @@
 title: Alight  Marketo Templates
 timezone: UTC
 collections:
+  landing-pages:
+    title: Landing Pages
+    output: true
   posts:
     title: Posts
     output: true
