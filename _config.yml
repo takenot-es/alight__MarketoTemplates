@@ -1,71 +1,60 @@
+---
 title: Alight Solutions
+timezone: UTC
+collections:
+  landing_pages:
+    title: Landing Pages
+    output: true
+    permalink: "/landing-pages/:title/"
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+defaults:
+- scope:
+    path: ''
+    type: landing_pages
+  values:
+    layout: blocks
 author: Ryan Underwood
 email: ryan@takenot.es
-description: From hire to retire, and beyond, your people depend on you for resources that will enhance their health, wealth, and wellbeing. Put the power in their hands with data and technology that provides clarity through timely, broader connected insights. Drive better outcomes for your people and for your business.
+description: From hire to retire, and beyond, your people depend on you for resources
+  that will enhance their health, wealth, and wellbeing. Put the power in their hands
+  with data and technology that provides clarity through timely, broader connected
+  insights. Drive better outcomes for your people and for your business.
 favicon: https://www.alight.com/favicon.ico
-logo: /assets/imgs/logo.svg
-baseurl: "" # the subpath of your site, e.g. /blog
-url: ""
+logo: "/assets/imgs/logo.svg"
+baseurl: ''
+url: ''
 copy_year: 2023
-
-# Placement of JS Links. Can go in header or footer or both. Boolean options true or false
 scripts_in_header: false
 scripts_in_footer: true
-
 google_tag: G-XXXXXXXXXX
-
 dark_theme_backgrounds:
-  - black
-  - slate
-  - light-slate
-  - black-90
-  - slate-90
-
+- black
+- slate
+- light-slate
+- black-90
+- slate-90
 sass:
-  sass_dir: /assets/sass/
-
-collections: 
-  landing_pages:
-    output: true
-    permalink: /landing-pages/:title/
-
-defaults:
-- 
-  scope:
-    type: "landing_pages"
-  values:
-    layout: "blocks"
-
+  sass_dir: "/assets/sass/"
 enable_compress_html: false
 compress_html:
   clippings: all
-  comments: ["<!-- ", " -->"]
+  comments:
+  - "<!-- "
+  - " -->"
   endings: all
   ignore:
-    envs: [local]
+    envs:
+    - local
   blanklines: false
   profile: true
-  startings: [html, head, body]
-
+  startings:
+  - html
+  - head
+  - body
 plugins:
-  - jekyll-feed
-
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+- jekyll-feed
