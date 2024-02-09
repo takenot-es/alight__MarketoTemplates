@@ -40,6 +40,7 @@ page_sections:
   title: Giveaway
   toc_include: true
   image_right: false
+  image: https://go.alight.com/rs/777-ERD-451/images/hr-tech-2023-coffee-photo.jpg
   headline: This is the headline
   content: "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quo
     numquam fuga fugiat quis! Facere voluptate nobis, officiis, soluta ducimus ad,
@@ -51,13 +52,6 @@ page_sections:
   block: single-speaker-v1
   title: Speaking Session
   toc_include: true
-- template: Image Content
-  block: image-content
-  title: Secondary Image Content
-  toc_include: true
-small_sections:
-- bleep: bloop
-  foo: bar
 layout: blocks
 ---
 
