@@ -5,6 +5,7 @@ collections:
   landing_pages:
     title: Landing Pages
     output: true
+    permalink: "/landing-pages/:title/"
   posts:
     title: Posts
     output: true
