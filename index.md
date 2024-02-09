@@ -1,16 +1,15 @@
 ---
 title: Marketo Event Templates
 date: 2024-02-24 00:00:00 Z
-layout: blocks
 location: 534 Wallace Street, <br>Marseilles, IL 61341
 booth_number: 8675309
 page_sections:
 - template: Event Jumobtron
   block: event-jumbotron
   title: Event Header
-  toc_include: 'false'
+  toc_include: false
   headline: Transforming the employee experience
-  info_container: 'true'
+  info_container: true
   info_details:
   - label: Location
     content: 534 Wallace Street, <br>Marseilles, IL 61341
@@ -20,7 +19,7 @@ page_sections:
     content: 8675309
 - template: Intro TOC
   block: intro-toc
-  toc_include: 'false'
+  toc_include: false
   title: Table of Contents
   toc_headline: This is the headline here.
   headline: Content is gonna go here.
@@ -51,6 +50,11 @@ page_sections:
 - template: Single Speaker
   block: single-speaker-v1
   title: Speaking Session
-  toc_include: 'true'
+  toc_include: true
+- template: Image Content
+  block: image-content
+  title: Secondary Image Content
+  toc_include: true
+layout: blocks
 ---
 
