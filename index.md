@@ -55,6 +55,9 @@ page_sections:
   block: image-content
   title: Secondary Image Content
   toc_include: true
+small_sections:
+- bleep: bloop
+  foo: bar
 layout: blocks
 ---
 
