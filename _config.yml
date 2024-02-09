@@ -25,9 +25,16 @@ sass:
   sass_dir: /assets/sass/
 
 collections: 
-  pages:
+  landing_pages:
     output: true
-    permalink: /:title/
+    permalink: /landing-pages/:title/
+
+defaults:
+- 
+  scope:
+    type: "landing_pages"
+  values:
+    layout: "blocks"
 
 enable_compress_html: false
 compress_html:
