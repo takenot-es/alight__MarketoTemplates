@@ -1,0 +1,11 @@
+{% capture sectionTitleId %}
+    {% if section.title %}
+        {{ section.title | downcase | replace: 'id--', '#' }}
+    {% endif %}
+{% endcapture %}
+
+<section class="single-speaker-v1 py-4 py-md-6"  {{ sectionTitleId }}>
+    <div class="container">
+
+    </div>
+</section>
