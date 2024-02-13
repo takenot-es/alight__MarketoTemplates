@@ -1,3 +1,5 @@
+{% include /snippets/id-func.html %}
+
 {% assign dark_theme_bg = site.dark_theme_backgrounds %}
 
 {% capture ic_background_color %}
@@ -59,7 +61,7 @@
 {% endcapture %}
 
 
-<section class="py-4 py-md-6 {{ ic_background_color | strip_newlines }}" id="{{ section.title | downcase | replace: ' ', '-'}}" {{ ic_bg_dark_theme }}>
+<section class="py-4 py-md-6 {{ ic_background_color | strip_newlines }}" {{ sectionTitleId }}   {{ ic_bg_dark_theme }}>
     <div class="container">
         <div class="{{ row_direction | strip_newlines }}">
             <div class="col-auto mb-2 mb-lg-0 mx-auto mx-lg-0 d-flex align-items-center justify-content-center">

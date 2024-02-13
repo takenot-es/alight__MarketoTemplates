@@ -1,4 +1,6 @@
-<section class="header__tradeshow {% if section.info_container == 'true' or section.info_container == true %}bg-slate-100{% endif %}" id="{{ section.title | downcase | replace: ' ', '-' }}">
+{% include /snippets/id-func.html %}
+
+<section class="header__tradeshow {% if section.info_container == 'true' or section.info_container == true %}bg-slate-100{% endif %}" {{ sectionTitleId }}>
         <div class="container-fluid content-container">
             <div class="row">
                 <div class="col-lg-6 page-title has-event-jumbotron-page-title" id="event-jumbotron-page-title">

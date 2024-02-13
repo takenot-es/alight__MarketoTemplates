@@ -1,0 +1,10 @@
+{% comment %}
+This pulls in the field {{ section.title }}
+Then creates an id for the <section></section> allowing the TOC to work.
+{% endcomment %}
+
+{% capture sectionTitleId %}
+    {% if section.title %}
+        id="{{ section.title | downcase | replace: ' ', '-' }}"
+    {% endif %}
+{% endcapture %}

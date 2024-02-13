@@ -125,12 +125,13 @@ p, section {
   li {
     position: relative;
     padding-left: 1rem + $spacer-4;
-    margin-bottom: $spacer-2;
+    margin-bottom: $spacer-half;
     &:before {
       content: '—';
       position: absolute;
       left: 1rem;
       top: -2px;
+      color: currentColor;
     }
   }
 

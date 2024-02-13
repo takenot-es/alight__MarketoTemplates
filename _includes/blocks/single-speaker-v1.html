@@ -1,11 +1,85 @@
-{% capture sectionTitleId %}
-    {% if section.title %}
-        {{ section.title | downcase | replace: 'id--', '#' }}
-    {% endif %}
-{% endcapture %}
+{% include /snippets/id-func.html %}
 
-<section class="single-speaker-v1 py-4 py-md-6"  {{ sectionTitleId }}>
+
+<section class="single-speaker-v1 py-4 py-md-8 bg-light"  {{ sectionTitleId }}>
     <div class="container">
-
-    </div>
+        {% if section.headline %}
+        <div class="row pb-4">
+            <div class="col-12">
+                <h2 class="display-2 has-gradient-bar gradient-bar-bottom gradient-bar-teal">
+                    <em>
+                        {{ section.headline }}
+                    </em>
+                </h2>
+            </div>
+        </div>
+        {% endif %}
+        <div class="row">
+            <!-- Speaking Session Inner Panel -->
+            <div class="col-12 bg-white rounded py-2 px-2">
+                <div class="row align-items-center mb-2">
+                    <div class="col-lg-auto order-lg-2 ms-auto mb-2 mb-md-0">
+                       {% include /snippets/pill-label.html text="Upcoming session" color="yellow" %}
+                    </div>
+                    <div class="col-lg-8 col-md-7">
+                        <h3>
+                            {{ section.session_title }}
+                        </h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 order-lg-3 order-md-3 mb-2 mb-md-0">
+                        <ul class="list-unstyled p-0">
+                            <li class="mb-2">
+                                <p class="has-indicator">
+                                    Session Information
+                                </p>
+                            </li>
+                            {% for item in section.session_information %}
+                            <li class="ps-3">
+                                {{ item.date }}
+                            </li>
+                            <li class="ps-3">
+                                {{ item.time }}
+                            </li>
+                            {% endfor %}
+                            <li class="mt-md-4 mt-2">
+                                <p class="has-indicator">
+                                    Speaker Information 
+                                </P>
+                            </li>
+                            {% for item in section.speaker_info %}
+                            <li class="pb-2 pt-1">
+                                <div class="row align-items-center">
+                                    <div class="col-auto my-1">
+                                        <figure class="circular-figure" style="height: 100px; width: 100px;">
+                                            <img src="{{ item.photo }}" alt="{{ item.name }}, {{ item.title }} {{ item.company }}">
+                                        </figure>
+                                    </div>
+                                    <div class="col-auto">
+                                        <ul class="list-unstyled">
+                                            <li class="strong">
+                                                {{ item.name }}
+                                            </li>
+                                            <li class="text-muted small">
+                                                {{ item.title }}{% if item.company %}{{ item.company | prepend: ',&nbsp;' }}{% endif %}
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            {% endfor %}
+                            <li class="d-md-none border-bottom"></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-7 col-md-6 col-12">
+                        {{ section.session_description }}
+                    </div>
+                    <div class="col-lg-auto col-md-auto border-start d-none d-md-flex ms-md-auto">
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- End Speaking Session Inner Panel -->
+        </div>
 </section>

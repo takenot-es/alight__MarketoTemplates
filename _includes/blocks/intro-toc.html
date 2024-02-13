@@ -1,12 +1,16 @@
-<section class="py-4 py-md-8" id="{{ section.title | downcase | replace: ' ', '-' }}">
+{% include /snippets/id-func.html %}
+
+<section class="py-4 py-md-8" {{ sectionTitleId }}>
     <div class="container">
         {% if section.headline %}
         <div class="row pb-4">
-            <h2 class="display-2 has-gradient-bar gradient-bar-bottom gradient-bar-yellow">
-                <em>
-                    {{ section.headline }}
-                </em>
-            </h2>
+            <div class="col-12">
+                <h2 class="display-2 has-gradient-bar gradient-bar-bottom gradient-bar-teal">
+                    <em>
+                        {{ section.headline }}
+                    </em>
+                </h2>
+            </div>
         </div>
         {% endif %}
         <div class="row">
