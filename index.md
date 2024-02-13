@@ -60,6 +60,10 @@ page_sections:
     title: Designer
     company: Alight Solutions
     photo: https://images.unsplash.com/photo-1521119989659-a83eee488004?q=80&w=3423&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+  - name: Jen Troyer
+    title: UI/UX Director
+    company: Alight Solutions
+    photo: https://images.unsplash.com/photo-1521119989659-a83eee488004?q=80&w=3423&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
   session_information:
   - date: February 24, 2024
     time: 9:00AM — 10:00AM

@@ -39,15 +39,15 @@
                                 {{ item.time }}
                             </li>
                             {% endfor %}
-                            <li class="mt-md-4 mt-2">
+                            <li class="mt-md-4 mt-2 mb-2">
                                 <p class="has-indicator">
                                     Speaker Information 
                                 </P>
                             </li>
                             {% for item in section.speaker_info %}
-                            <li class="pb-2 pt-1">
+                            <li class="py-half">
                                 <div class="row align-items-center">
-                                    <div class="col-auto my-1">
+                                    <div class="col-auto mb-1">
                                         <figure class="circular-figure" style="height: 100px; width: 100px;">
                                             <img src="{{ item.photo }}" alt="{{ item.name }}, {{ item.title }} {{ item.company }}">
                                         </figure>
@@ -58,7 +58,7 @@
                                                 {{ item.name }}
                                             </li>
                                             <li class="text-muted small">
-                                                {{ item.title }}{% if item.company %}{{ item.company | prepend: ',&nbsp;' }}{% endif %}
+                                                {{ item.title }}{% if item.company %}{{ item.company | prepend: '<br>' }}{% endif %}
                                             </li>
                                         </ul>
                                     </div>
