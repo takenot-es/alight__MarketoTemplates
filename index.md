@@ -10,6 +10,7 @@ page_sections:
   title: Event Header
   toc_include: false
   headline: Transforming the employee experience
+  image: https://go.alight.com/rs/777-ERD-451/images/hr-tech-2023-hero.jpg
   info_container: true
   info_details:
   - label: Location

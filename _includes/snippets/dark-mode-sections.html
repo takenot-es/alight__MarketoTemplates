@@ -1,0 +1,13 @@
+{% assign dark_theme_bg = site.dark_theme_backgrounds %}
+
+{% capture ic_background_color %}
+    bg-{{ section.background_color }}
+{% endcapture %}
+
+{% capture ic_bg_dark_theme %}
+    {% for value in dark_theme_bg %}
+        {% if section.background_color == value %}
+            data-bs-theme="dark"
+        {% endif %}
+    {% endfor %}
+{% endcapture %}

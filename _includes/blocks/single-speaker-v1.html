@@ -6,11 +6,7 @@
         {% if section.headline %}
         <div class="row pb-4">
             <div class="col-12">
-                <h2 class="display-2 has-gradient-bar gradient-bar-bottom gradient-bar-teal">
-                    <em>
-                        {{ section.headline }}
-                    </em>
-                </h2>
+                {% include /snippets/section-headline.html bar_bottom="true" bar_color="teal" headline=section.headline %}
             </div>
         </div>
         {% endif %}

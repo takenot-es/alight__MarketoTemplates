@@ -1,0 +1,28 @@
+{% assign dark_theme_bg = site.dark_theme_backgrounds %}
+
+{% capture ic_cta %}
+
+    {% capture ic_cta_id %}
+        {% if section.cta_link contains 'id--' %}
+            {{ section.cta_link | replace: 'id--', '#' }}
+        {% else %}
+            {{ section.cta_link }}
+        {% endif %}
+    {% endcapture %}
+   
+    {% capture ic_cta_style %}
+        {% for value in dark_theme_bg %}
+            {% if section.background_color == value %}
+                btn-yellow
+            {% else %}
+                btn-black
+            {% endif %}
+        {% endfor %}
+    {% endcapture %}
+
+    {% if section.cta %}
+    <a href="{{ ic_cta_id }}" class="btn {{ ic_cta_style }}">
+        {{ section.cta }}
+    </a>
+    {% endif %}
+{% endcapture %}
