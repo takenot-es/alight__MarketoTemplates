@@ -40,9 +40,18 @@
                             </li>
                             {% endfor %}
                             <li class="mt-md-4 mt-2 mb-2">
+                            {% for item in section.speaker_info  %}                       
+                                {% assign speaker_count = forloop.length %}
+                            {% endfor %}
+                            {% if speaker_count > 1 %}
+                                <p class="has-indicator">
+                                    Speakers
+                                </p>
+                            {% else %}
                                 <p class="has-indicator">
                                     Speaker Information 
-                                </P>
+                                </p>
+                            {% endif %}
                             </li>
                             {% for item in section.speaker_info %}
                             <li class="py-half">

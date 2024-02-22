@@ -1,0 +1,53 @@
+{% include /snippets/id-func.html %}
+
+<section class="py-4 py-md-8" {{ sectionTitleId }}>
+    <div class="container">
+        {% if section.headline %}
+        <div class="row pb-4">
+            <div class="col-12">
+                {% include /snippets/section-headline.html bar_bottom='true' bar_color="teal" headline=section.headline %}
+            </div>
+        </div>
+        {% endif %}
+        <div class="row">
+            <div class="col-md-auto order-lg-2 ms-lg-auto mb-3 mb-lg-0">
+                <div class="row">
+                    <div class="col-lg-12 mb-2">
+                        <p>
+                            <strong>
+                                {{ section.share_headline }}
+                            </strong>
+                        </p>
+                        <ul class="row list-unstyled p-0">
+                            {% for social in section.social_share %}
+                                <li class="col-auto">
+                                    <a href="{{ social.link }}" target="_blank" class="social-share">
+                                        {% if social.title == "Facebook" %}
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                        {% endif %}
+                                        {% if social.title == "X" or social.title == "Twitter" %}
+                                        <i class="fa-brands fa-x-twitter"></i>
+                                        {% endif %}
+                                        {% if social.title == "LinkedIn" %}
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                        {% endif %}
+                                    </a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7">
+                {{ section.content }}
+                {% if section.cta %}
+                <p class="mt-4">
+                    <a href="{% if section.cta_link contains 'id--' %}{{ section.cta_link | remove: 'id--' | prepend: '#' }}{% else %}{{section.cta_link }}{% endif %}" class="btn btn-primary">
+                        {{ section.cta }}
+                    </a>
+                </p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</section>

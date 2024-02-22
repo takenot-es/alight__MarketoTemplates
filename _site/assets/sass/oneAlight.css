@@ -2642,6 +2642,8 @@ textarea.form-control-lg { min-height: calc(1.5em + 1rem + calc(var(--bs-border-
 
 .box-icon-link:hover:after { color: #FFF200; background-color: #000000; }
 
+.social-share { font-size: 1rem; border: 2px solid currentColor; border-radius: 50rem; display: flex; align-items: center; justify-content: center; text-decoration: none; height: 3rem; width: 3rem; }
+
 .form-modal { display: none; opacity: .1; transition: all .6s ease-in-out; overflow: scroll; position: fixed; transform: translateX(-100vh); }
 
 .form-modal.show { display: block; opacity: 1; position: fixed; top: 0; right: 0; left: 0; bottom: 0; height: 100vh; width: 100vw; background-color: #FFF200; z-index: 10000; transform: translateX(0); transition: all .3s ease-in-out; }

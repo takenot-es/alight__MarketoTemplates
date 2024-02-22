@@ -7,5 +7,6 @@
     {% if site.scripts_in_header == true %}
     {%- include /global/scripts.html %}
     {% endif %}
+    <script src="https://kit.fontawesome.com/8c511e123d.js" crossorigin="anonymous"></script>
 </head>
 <body id="{% if page.title %}{{ page.title | downcase | replace: ' ', '-' }}{% else %}{{ site.title | downcase | replace: ' ', '-' }}{% endif %}" class="{{ page.layout }} {% if page.url != '/' %}{{ page.url | downcase | remove: '.html' | remove: '/' }}{% else %}index{% endif %} {% if page.background_color %}bg-{{ page.background_color }}{% endif %}">

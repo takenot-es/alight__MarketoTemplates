@@ -1,0 +1,32 @@
+{% include /snippets/id-func.html %}
+
+<section class="bg-slate-05 py-4 py-md-8" {{ sectionTitleId}}>
+        <div class="container">
+            {% if section.headline %}
+            {% assign content_padding = 'pt-2' %}
+
+            <div class="row pb-4">
+                <div class="col-12">
+                    {% include /snippets/section-headline.html bar_bottom="true" bar_color="teal" headline=section.headline %}
+                </div>
+            </div>
+            {% endif %}
+            {% if section.content %}
+            <div class="row pb-2 pb-md-4 {{ content_padding }}">
+                <div class="col-lg-7 col-md-8">
+                    {{ section.content }}
+                </div>
+            </div>
+            {% endif %}
+        </div>
+        <div class="container">
+        <div class="row" id="three-col-links-row">
+            {% for block_link in section.links %}
+                <div class="col-md-6 mb-2">
+                    <a class="box-icon-link" href="{{ block_link.url }}" target="_blank">
+                        {{ block_link.title }}
+                    </a>
+                </div>
+            {% endfor %}
+        </div>
+</section>

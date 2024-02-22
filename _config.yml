@@ -1,23 +1,10 @@
----
 title: Alight Solutions
-timezone: UTC
 collections:
-  landing_pages:
-    title: Landing Pages
+  events:
     output: true
-    permalink: "/landing-pages/:title/"
-  posts:
-    title: Posts
-    output: true
+    permalink: "/events/:title/"
   uploads:
-    title: Uploads
     output: true
-defaults:
-- scope:
-    path: ''
-    type: landing_pages
-  values:
-    layout: blocks
 author: Ryan Underwood
 email: ryan@takenot.es
 description: From hire to retire, and beyond, your people depend on you for resources
@@ -40,21 +27,5 @@ dark_theme_backgrounds:
 - slate-90
 sass:
   sass_dir: "/assets/sass/"
-enable_compress_html: false
-compress_html:
-  clippings: all
-  comments:
-  - "<!-- "
-  - " -->"
-  endings: all
-  ignore:
-    envs:
-    - local
-  blanklines: false
-  profile: true
-  startings:
-  - html
-  - head
-  - body
 plugins:
 - jekyll-feed
