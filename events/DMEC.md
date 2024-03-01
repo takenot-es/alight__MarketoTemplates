@@ -30,8 +30,12 @@ page_sections:
     link: https://twitter.com/intent/tweet?text=https%3A//go.alight.com/DMEC-Compliance-Conference-2024
   - title: LinkedIn
     link: https://www.linkedin.com/shareArticle?mini=true&url=https%3A//go.alight.com/DMEC-Compliance-Conference-2024
-  headline: "Transformation starts with your people"
-  content: "<p>From hire to retire, and beyond, your people depend on you for resources that will enhance their health, wealth, and wellbeing. Put the power in their hands with data and technology that provides clarity through timely, broader connected insights. Drive better outcomes for your people and for your business.</p><h6><strong>Powering confident decisions, for life.</strong></h6>"
+  headline: Transformation starts with your people
+  content: "<p>From hire to retire, and beyond, your people depend on you for resources
+    that will enhance their health, wealth, and wellbeing. Put the power in their
+    hands with data and technology that provides clarity through timely, broader connected
+    insights. Drive better outcomes for your people and for your business.</p><h6><strong>Powering
+    confident decisions, for life.</strong></h6>"
 - template: Single Speaker
   block: single-speaker-v2
   title: Speaking Session
@@ -51,7 +55,17 @@ page_sections:
     time: 1:00-2:00 pm<br>Concurrent Sessions
   session_title: Name That Law&colon; What to Do When a Leave Is Covered By More Than
     One Law
-  session_description: "<p>What do you do when an employee is on a single leave of absence that is covered by more than one law? Your challenge is to determine which aspect of each law takes precedence over the others. A single absence could be a qualified event under the federal Family and Medical Leave Act, workers’ compensation, state paid or unpaid family and medical leave laws, and/or a disability program. Add the Employee Retirement Income Security Act or the Americans with Disabilities Act into the mix, and you have a minefield of rules and regulations that may be tricky to traverse. During this interactive hour, Alight’s compliance experts will walk you through real-life complex scenarios that we see every day — leaving you better educated about the knowledge and resources you need when you come across these challenging situations.</p>"
+  session_description: "<p>What do you do when an employee is on a single leave of
+    absence that is covered by more than one law? Your challenge is to determine which
+    aspect of each law takes precedence over the others. A single absence could be
+    a qualified event under the federal Family and Medical Leave Act, workers’ compensation,
+    state paid or unpaid family and medical leave laws, and/or a disability program.
+    Add the Employee Retirement Income Security Act or the Americans with Disabilities
+    Act into the mix, and you have a minefield of rules and regulations that may be
+    tricky to traverse. During this interactive hour, Alight’s compliance experts
+    will walk you through real-life complex scenarios that we see every day — leaving
+    you better educated about the knowledge and resources you need when you come across
+    these challenging situations.</p>"
 - template: Image Content
   block: image-content
   background_color: slate
@@ -60,13 +74,20 @@ page_sections:
   image: https://go.alight.com/rs/777-ERD-451/images/apa-congress-2023-workday-party.jpg
   content: "<h2><em>Save your spot at our <strong>invitation-only cocktail party</strong>
     onsite at the Sheraton Dallas!</em></h2><p><strong>Tuesday, May 16 | 5:00-7:00
-    PM<br>Sheraton Dallas: Open Palette</strong></p><p>Join Alight and MDGuidelines team members from the U.S. and Canada for an exclusive cocktail reception after the conference program has concluded on Tuesday. Make your way to Open Palette (inside the conference hotel!) for a fun get-together and enter to win one of three Target gift card door prizes!</p>"
+    PM<br>Sheraton Dallas: Open Palette</strong></p><p>Join Alight and MDGuidelines
+    team members from the U.S. and Canada for an exclusive cocktail reception after
+    the conference program has concluded on Tuesday. Make your way to Open Palette
+    (inside the conference hotel!) for a fun get-together and enter to win one of
+    three Target gift card door prizes!</p>"
 - template: Block Links
   block: block-links
   title: Products
   toc_include: true
   headline: Learn how Alight can partner with you, beyond absence management
-  content: "<p>Supporting a productive and healthy workforce takes a coordinated effort. Your people count on you for resources that will enhance their health, wealth, retirement plans and more. Our technology and insights can drive better outcomes for your people and your business.</p>"
+  content: "<p>Supporting a productive and healthy workforce takes a coordinated effort.
+    Your people count on you for resources that will enhance their health, wealth,
+    retirement plans and more. Our technology and insights can drive better outcomes
+    for your people and your business.</p>"
   links:
   - title: 'Our Platform: Alight Worklife'
     url: https://www.alight.com/platform/alight-worklife
@@ -88,7 +109,10 @@ page_sections:
   title: Meet and Greet
   image_right: false
   image: https://go.alight.com/rs/777-ERD-451/images/Calendar--MeetUp.png?version=0
-  content: "<h2><em>Let's meet!</em></h2><p>Would you like to deliver a leave of absence experience that supports employee wellbeing and returns your people to work at the right time? Schedule a meeting with an Alight leaves expert to discuss your challenges and see how Alight can help.</p>"
+  content: "<h2><em>Let's meet!</em></h2><p>Would you like to deliver a leave of absence
+    experience that supports employee wellbeing and returns your people to work at
+    the right time? Schedule a meeting with an Alight leaves expert to discuss your
+    challenges and see how Alight can help.</p>"
   cta: Set up a meeting with Alight
   cta_link: id--replace-me
 ---

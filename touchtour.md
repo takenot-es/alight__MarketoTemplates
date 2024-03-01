@@ -1,6 +1,6 @@
 ---
-layout: touchtour
 title: Touch Tour Test
+layout: touchtour
 nav_links:
 - link: Home
   icon: home
@@ -30,3 +30,4 @@ subpages:
 - page: 2
 - page: 3
 ---
+

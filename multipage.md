@@ -1,6 +1,6 @@
 ---
-layout: multipage
 title: Multipage Test
+layout: multipage
 nav_links:
 - Home
 - Seminars
@@ -26,3 +26,4 @@ subpages:
 - page: 2
 - page: 3
 ---
+
