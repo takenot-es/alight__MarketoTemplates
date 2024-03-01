@@ -1,0 +1,120 @@
+.nav-toggle {
+    position: fixed;
+    top: 24px;
+    left: 20px;
+    z-index: 100000;
+    height: 40px;
+    width: 40px;
+    border: 2px solid $light;
+    background-color: $light;
+    border-radius: 50rem;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+        cursor: crosshair;
+    }
+
+}
+
+.touch-nav {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    border-radius: $spacer-half;
+    z-index: 1000;
+    background-color: rgba(white, .50);
+    backdrop-filter: blur(10px);
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: .4s all ease-in-out;
+    transform: translateX(-100vw);
+
+    &.show {
+        transform: translateX(0);
+    }
+
+    .logo-container {
+        display: flex;
+        padding: $spacer-2;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid rgba($black,.05);
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        margin-top: auto;
+        margin-bottom: auto;
+        width: 100%;
+        list-style: none;
+        padding: 0;
+
+        .nav-item {
+            padding: $spacer-half;
+            width: 100%;
+            color: $black-50;
+
+            //Link Inactive
+            .nav-link {
+                display: flex;
+                align-items: center;
+                line-height: 1;
+                padding: $spacer-half;
+                border-radius: $spacer-1;
+                background-color: transparent;
+                transition: .3s all ease-in-out;
+
+                //Icon container
+                .icon-container {
+                    display: flex;
+                    height: 40px;
+                    width: 40px;
+                    align-items: center;
+                    justify-content: center;
+                    margin-right: $spacer-half;
+                    
+
+                }
+
+                //Link text container
+                .link-container {
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    
+                    span {
+                        margin-top: 3px;
+                    }
+                }
+
+                //Link hover
+                &:hover {
+                    background-color: rgba(white, .5);
+                    color: $black-70;
+                }
+
+                //Link active
+                &.active {
+                    background-color: rgba(white, .8);
+                    color: $black;
+
+                    .icon-container span {
+                        color: $slate;
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+}

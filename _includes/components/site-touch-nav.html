@@ -1,0 +1,30 @@
+<div class="nav-toggle">
+    <span class="material-symbols-outlined">
+        menu
+    </span>
+</div>
+<nav class="touch-nav">
+    <div class="logo-container">
+        <a class="div_open ms-auto" data-div="div-1" href="#">
+            {% include /snippets/logo.svg fill="#000"%}
+        </a>
+    </div>
+    <ul class="navbar">
+        {% for nav_item in page.nav_links %}
+            <li class="nav-item">
+                <a class="nav-link div_open {% if forloop.first %}active{% endif %}" data-div="div-{{ forloop.index }}" href="#">
+                    <div class="icon-container">
+                        <span class="material-symbols-outlined strong">
+                            {{- nav_item.icon -}}
+                        </span>
+                    </div>
+                    <div class="link-container">
+                        <span>
+                            {{ nav_item.link }}
+                        </span>
+                    </div>
+                </a>
+            </li>
+          {% endfor %}
+        </ul>
+</nav>

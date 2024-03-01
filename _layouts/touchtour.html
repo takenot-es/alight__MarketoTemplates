@@ -1,0 +1,53 @@
+{% include /components/site-header.html %}
+{% include /components/site-touch-nav.html %}
+<h1 class="meta-description">
+    {{ page.description }}
+</h1>
+<div class="page-wrapper {{ page.title | downcase | replace: ' ', '-' }}">
+    <main class="main-content">
+        <div class="div-wrap">
+            {% for subpage in page.subpages %}
+            <div class="div-content {% if forloop.first %}show{% endif %}" data-div="div-{{ forloop.index }}" id="div-{{ forloop.index }}">
+                {% if subpage.sections %}
+                    {% for section in subpage.sections %}
+                        {% include /blocks/{{ section.block }}.html %}
+                    {% endfor %}
+                {% else %}
+                    {{ subpage.content }}
+                {% endif %}
+            </div>
+            {% endfor }
+        </div>
+        {{ content }}
+    </main>
+    {% include /components/page-footer.html %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".div_open").on("click", function () {
+                var target = $(this).data("div");
+
+                $(".div-content").removeClass("show");
+                $(".div-content[data-div='" + target + "']").addClass("show");
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $(".nav-link").on("click", function () {
+                var target = $(this).data("div");
+
+                $(".nav-link").removeClass("active");
+                $(".nav-link[data-div='" + target + "']").addClass("active");
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+            $(".nav-toggle").click(function(){
+                $(".touch-nav").toggleClass("show");
+            });
+        });
+    </script>
+</div>
+{% include /components/site-footer.html %}

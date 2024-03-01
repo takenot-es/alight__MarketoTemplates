@@ -1,0 +1,18 @@
+.div-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.div-content {
+    opacity: 0;
+    display: none;
+    transition: .2s all ease-in-out;
+}
+
+.div-content.show {
+    opacity: 1;
+    display: block;
+}
