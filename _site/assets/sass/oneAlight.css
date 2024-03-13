@@ -2623,6 +2623,8 @@ textarea.form-control-lg { min-height: calc(1.5em + 1rem + calc(var(--bs-border-
 @keyframes rotationCounterCW { from { transform: rotate(359deg); }
   to { transform: rotate(0deg); } }
 
+.plain-jumbotron { min-height: 45vh; display: flex; align-items: center; }
+
 .circular-figure { display: block; border-radius: 100%; overflow: hidden; margin-bottom: 0; padding: 0; }
 
 .circular-figure img { height: 100%; width: 100%; display: block; object-fit: cover; object-position: center; }

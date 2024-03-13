@@ -18,10 +18,10 @@
                                 {{ section.share_headline }}
                             </strong>
                         </p>
-                        <ul class="row list-unstyled p-0">
+                        <ul class="row list-unstyled no-icon p-0">
                             {% for social in section.social_share %}
-                                <li class="col-auto">
-                                    <a href="{{ social.link }}" target="_blank" class="social-share">
+                                <li class="col-auto no-icon">
+                                    <a href="{{ social.link }}" target="_blank" class="social-share no-icon">
                                         {% if social.title == "Facebook" %}
                                         <i class="fa-brands fa-facebook-f"></i>
                                         {% endif %}

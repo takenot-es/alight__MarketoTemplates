@@ -1,0 +1,23 @@
+{% include /snippets/id-func.html %}
+{% include /snippets/dark-mode-sections.html %}
+{% include /snippets/dark-mode-buttons.html %}
+
+
+<header class="plain-jumbotron py-4 py-md-6 {{ ic_background_color | strip_newlines }}" {{ sectionTitleId }}   {{ ic_bg_dark_theme }}>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="display-2">
+                        {{ subpage.title }}
+                    </h2>
+                    {% if section.subtitle %}
+                    <h2 class="mt-2 h5 col-md-8">
+                        {{ section.subtitle }}
+                    </h2>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

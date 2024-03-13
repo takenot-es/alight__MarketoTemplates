@@ -26,20 +26,20 @@
                 <div class="row">
                     <div class="col-md-3 order-lg-3 order-md-3 mb-2 mb-md-0">
                         <ul class="list-unstyled p-0">
-                            <li class="mb-2">
+                            <li class="mb-2 no-icon">
                                 <p class="has-indicator">
                                     Session Information
                                 </p>
                             </li>
                             {% for item in section.session_information %}
-                            <li class="ps-3">
+                            <li class="ps-3 no-icon">
                                 {{ item.date }}
                             </li>
-                            <li class="ps-3">
+                            <li class="ps-3 no-icon">
                                 {{ item.time }}
                             </li>
                             {% endfor %}
-                            <li class="d-md-none mt-md-none mt-2 border-bottom"></li>
+                            <li class="d-md-none mt-md-none mt-2 border-bottom no-icon"></li>
                         </ul>
                     </div>
                     <div class="col-lg-7 col-md-6 col-12">
@@ -78,10 +78,10 @@
                     </div>
                     <div class="col-auto d-flex align-items-center">
                         <ul class="list-unstyled">
-                            <li class="strong">
+                            <li class="strong no-icon">
                                 {{ item.name }}
                             </li>
-                            <li class="text-muted small">
+                            <li class="text-muted small no-icon">
                                 {{ item.title }}{% if item.company %}{{ item.company | prepend: '<br>' }}{% endif %}
                             </li>
                         </ul>

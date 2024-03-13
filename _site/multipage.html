@@ -51,25 +51,25 @@
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 px-1">
           
             <li class="nav-item">
-                <a class="nav-link div_open" data-div="div-1" href="#">
+                <a class="nav-link div_open active" data-div="div-1" href="#">
                     Home
                 </a>
             </li>
           
             <li class="nav-item">
-                <a class="nav-link div_open" data-div="div-2" href="#">
+                <a class="nav-link div_open " data-div="div-2" href="#">
                     Seminars
                 </a>
             </li>
           
             <li class="nav-item">
-                <a class="nav-link div_open" data-div="div-3" href="#">
+                <a class="nav-link div_open " data-div="div-3" href="#">
                     After Party
                 </a>
             </li>
           
             <li class="nav-item">
-                <a class="nav-link div_open" data-div="div-4" href="#">
+                <a class="nav-link div_open " data-div="div-4" href="#">
                     Register
                 </a>
             </li>
@@ -192,6 +192,16 @@
 
                 $(".div-content").removeClass("show");
                 $(".div-content[data-div='" + target + "']").addClass("show");
+            });
+        });
+    </script>
+     <script>
+        $(document).ready(function () {
+            $(".nav-link").on("click", function () {
+                var target = $(this).data("div");
+
+                $(".nav-link").removeClass("active");
+                $(".nav-link[data-div='" + target + "']").addClass("active");
             });
         });
     </script>

@@ -32,5 +32,15 @@
             });
         });
     </script>
+     <script>
+        $(document).ready(function () {
+            $(".nav-link").on("click", function () {
+                var target = $(this).data("div");
+
+                $(".nav-link").removeClass("active");
+                $(".nav-link[data-div='" + target + "']").addClass("active");
+            });
+        });
+    </script>
 </div>
 {% include /components/site-footer.html %}

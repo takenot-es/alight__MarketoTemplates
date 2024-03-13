@@ -10,7 +10,7 @@
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 px-1">
           {% for nav_item in page.nav_links %}
             <li class="nav-item">
-                <a class="nav-link div_open" data-div="div-{{ forloop.index }}" href="#">
+                <a class="nav-link div_open {% if forloop.first %}active{% endif %}" data-div="div-{{ forloop.index }}" href="#">
                     {{ nav_item }}
                 </a>
             </li>

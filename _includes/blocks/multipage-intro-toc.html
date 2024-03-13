@@ -1,0 +1,52 @@
+{% include /snippets/id-func.html %}
+
+<section class="py-4 py-md-8" {{ sectionTitleId }}>
+    <div class="container">
+        {% if section.headline %}
+        <div class="row pb-4">
+            <div class="col-12">
+                {% include /snippets/section-headline.html bar_bottom='true' bar_color="teal" headline=section.headline %}
+            </div>
+        </div>
+        {% endif %}
+        <div class="row">
+            <div class="col-lg-5 col-md-8 order-lg-2 ms-lg-auto mb-3 mb-lg-0">
+                <div class="toc-container rounded-2 px-1 py-1 {% if section.toc_background %}bg-{{section.toc_background }}{% else %}bg-teal{% endif %}" data-bs-theme="{% if section.toc_theme %}{{ section.toc_theme }}{% else %}light{% endif %}">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h5>
+                                <strong>
+                                    {{ section.toc_headline }}
+                                </strong>
+                            </h5>
+                        </div>
+                    </div>
+                    <ul class="row list-unstyled m-0">
+                        {% for subpage in page.subpages | limit: 1 %}
+                            {% for section in subpage.sections %}
+                                {% if section.toc_include == 'true' or section.toc_include == true %}
+                                <li class="col-lg-6 ps-0 
+                                {% if forloop.length > 2 and forloop.last != true %} pb-1{% endif %}">
+                                    <a href="{{ section.title | downcase | replace: ' ', '-' | prepend: '#'}}">
+                                    {{ section.title }}
+                                    </a>
+                                </li>
+                                {% endif %}
+                            {% endfor %}
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                {{ section.content }}
+                {% if section.cta %}
+                <p class="mt-4">
+                    <a href="{% if section.cta_link contains 'id--' %}{{ section.cta_link | remove: 'id--' | prepend: '#' }}{% else %}{{section.cta_link }}{% endif %}" class="btn btn-primary">
+                        {{ section.cta }}
+                    </a>
+                </p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</section>
