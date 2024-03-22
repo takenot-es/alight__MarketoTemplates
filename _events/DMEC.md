@@ -103,7 +103,6 @@ page_sections:
     url: https://www.alight.com/solutions/workforce
   - title: Professional Services
     url: https://www.alight.com/solutions/professional-services
-<<<<<<< Updated upstream
 - template: Image Content
   block: image-content
   background_color: yellow
@@ -116,7 +115,5 @@ page_sections:
     challenges and see how Alight can help.</p>"
   cta: Set up a meeting with Alight
   cta_link: id--replace-me
-=======
->>>>>>> Stashed changes
 ---
 
