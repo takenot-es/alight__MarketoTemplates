@@ -68,3 +68,71 @@
     height: 3rem;
     width: 3rem;
 }
+
+.icon-button {
+    display: inline-block;
+    font-size: $font-size-base;
+    text-decoration: none;
+    color: $black;
+    position: relative;
+    padding: 13px 60px 13px 20px;
+    border: 0;
+    border-radius: 0;
+    background-color: transparent;
+    transition: all .3s ease-in-out;
+
+    &:after {
+        content: '→';
+        font-size: $font-size-base;
+        font-weight: bold;
+        position: absolute;
+        color: currentColor;
+        top: 50%;
+        right: $spacer-1 * 1.250;
+        transform: translateY(-50%);
+        transition: all .3s ease-in-out;
+    }
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        border: 1px solid currentColor;
+        border-radius: 50rem;
+        transition: all .3s ease-in-out;
+    }
+
+    &:hover {
+
+        &:after {
+            right: 1.1rem;
+            color: white;
+        }
+
+        &:before {
+            width: 50px;
+            background-color: currentColor;
+        }
+
+    }
+
+    &.white {
+        color: $white;
+
+        &:hover:after {
+            color: $black;
+        }
+    }
+
+    &.yellow {
+        color: $yellow;
+
+        &:hover:after {
+            color: $black;
+        }
+    }
+
+}

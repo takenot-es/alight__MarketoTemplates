@@ -1,0 +1,23 @@
+---
+title: Marketo Event Templates
+layout: default
+---
+
+<section class="container-fluid py-10 bg-slate vh-100" data-bs-theme="dark">
+    <div class="container">
+        <ul class="list-unstyled p-0 row">
+            <li class="no-icon">
+                <h2 class="text-yellow">
+                    Event Pages
+                </h2>
+            </li>
+            {% for item in site.events %}
+            <li class="no-icon col-12 py-4 border-bottom">
+                <a href="{{ item.url }}" class="h4">
+                    {{ item.title }}
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</section>

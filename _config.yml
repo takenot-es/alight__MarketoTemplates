@@ -3,14 +3,14 @@ title: Alight Solutions
 timezone: UTC
 collections:
   events:
-    title: Events
+    title: events
     output: true
     permalink: "/events/:title/"
   posts:
-    title: Posts
+    title: posts
     output: true
   uploads:
-    title: Uploads
+    title: uploads
     output: true
 author: Ryan Underwood
 email: ryan@takenot.es
