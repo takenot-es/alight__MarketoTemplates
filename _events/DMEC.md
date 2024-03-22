@@ -84,7 +84,10 @@ page_sections:
   title: Products
   toc_include: true
   headline: Learn how Alight can partner with you, beyond absence management
-  content: "<p>Supporting a productive and healthy workforce takes a coordinated effort. Your people count on you for resources that will enhance their health, wealth, retirement plans and more. Our technology and insights can drive better outcomes for your people and your business.</p>"
+  content: "<p>Supporting a productive and healthy workforce takes a coordinated effort.
+    Your people count on you for resources that will enhance their health, wealth,
+    retirement plans and more. Our technology and insights can drive better outcomes
+    for your people and your business.</p>"
   links:
   - title: 'Our Platform: Alight Worklife'
     url: https://www.alight.com/platform/alight-worklife
@@ -100,5 +103,20 @@ page_sections:
     url: https://www.alight.com/solutions/workforce
   - title: Professional Services
     url: https://www.alight.com/solutions/professional-services
+<<<<<<< Updated upstream
+- template: Image Content
+  block: image-content
+  background_color: yellow
+  title: Meet and Greet
+  image_right: false
+  image: https://go.alight.com/rs/777-ERD-451/images/Calendar--MeetUp.png?version=0
+  content: "<h2><em>Let's meet!</em></h2><p>Would you like to deliver a leave of absence
+    experience that supports employee wellbeing and returns your people to work at
+    the right time? Schedule a meeting with an Alight leaves expert to discuss your
+    challenges and see how Alight can help.</p>"
+  cta: Set up a meeting with Alight
+  cta_link: id--replace-me
+=======
+>>>>>>> Stashed changes
 ---
 
