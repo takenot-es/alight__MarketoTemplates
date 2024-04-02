@@ -1,0 +1,68 @@
+{% include /snippets/id-func.html %}
+{% include /snippets/dark-mode-sections.html %}
+{% include /snippets/dark-mode-buttons.html %}
+
+<section class="py-4 py-md-6 {{ ic_background_color | strip_newlines }}" {{ sectionTitleId }}   {{ ic_bg_dark_theme }}>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                {% if section.headline %}
+                    {% include /snippets/section-headline.html bar_color="teal" headline=section.headline %}
+                    {% endif %}
+                    {% if section.content %}
+                    <div class="mb-4">
+                        {{ section.content }}
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    <div class="container mt-md-4 mt-2">
+        <div class="row">
+            <div class="col-lg-6">
+                <h4>
+                    <strong>
+                        {{ section.subheadline }}
+                    </strong>
+                </h4>
+                <div class="rounded py-2 px-2 bg-slate mt-2 mb-2 mb-md-0">
+                    <ul class="p-0 row list-unstyled">
+                        {% for detail in section.details %}
+                        <li class="col-lg-6 no-icon {% if forloop.last != true %}pb-2{% endif %}">
+                            <p class="small strong mb-0 text-uppercase text-white">
+                                {{ detail.label | append: ':'}}
+                            </p>
+                            <p class="text-white mb-0">
+                                {{ detail.content }}
+                            </p>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="mb-2">
+                    {{ section.column_content }}
+                </div>
+                {% for speaker in section.speakers %}
+                <div class="row align-items-center py-2">
+                    <div class="col-auto mb-1 mb-md-0">
+                        <figure class="circular-figure" style="height: 100px; width: 100px;">
+                            <img src="{{ speaker.headshot }}" alt="{{ speaker.name }}, {{ speaker.title }}">
+                        </figure>
+                    </div>
+                    <div class="col-auto">
+                        <p class="strong mb-0">
+                            {{ speaker.name }}
+                        </p>
+                        <p>
+                            {{ speaker.title }}
+                        </p>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+</section>

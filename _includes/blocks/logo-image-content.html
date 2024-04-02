@@ -23,7 +23,10 @@
 <section class="py-4 py-md-6 {{ ic_background_color | strip_newlines }}" {{ sectionTitleId }}   {{ ic_bg_dark_theme }}>
     <div class="container">
         <div class="{{ row_direction | strip_newlines }}">
-            <div class="col-auto mb-2 mb-lg-0 mx-auto mx-lg-0 d-flex align-items-center justify-content-center">
+            <div class="col-auto mb-2 mb-lg-0 mx-auto mx-lg-0 flex-column d-flex align-items-center justify-content-center">
+                <figure class="mb-4" style="height: 108x; width: 350px;">
+                    <img src="{{ section.logo }}" alt="">
+                </figure>
                 <figure class="circular-figure" style="height: 350px; width: 350px;">
                     <img src="{{ section.image }}" alt="">
                 </figure>

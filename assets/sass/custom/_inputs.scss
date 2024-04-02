@@ -75,6 +75,7 @@
     text-decoration: none;
     color: $black;
     position: relative;
+    z-index: 4;
     padding: 13px 60px 13px 20px;
     border: 0;
     border-radius: 0;
@@ -107,6 +108,8 @@
 
     &:hover {
 
+        padding-left: 0;
+
         &:after {
             right: 1.1rem;
             color: white;
@@ -133,6 +136,21 @@
         &:hover:after {
             color: $black;
         }
+    }
+
+    &.yellow-solid {
+        color: $black;
+
+        &:before {
+            background-color: $yellow;
+            border-color: $yellow;
+            z-index: -1;
+        }
+
+        &:after {
+            color: currentColor;
+        }
+
     }
 
 }
