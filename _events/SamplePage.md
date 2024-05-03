@@ -7,3 +7,4 @@ description: The future of payroll doesnâ€™t have to be complex. Together, letâ€
   towards a future where payroll is streamlined, efficient and impactful. The future
   of payroll is now. Join us in shaping it together.
 ---
+
