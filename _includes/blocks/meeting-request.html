@@ -1,0 +1,37 @@
+{% include /snippets/id-func.html %}
+{% include /snippets/dark-mode-sections.html %}
+{% include /snippets/dark-mode-buttons.html %}
+
+
+{% capture row_direction %}
+    {% if section.image_right or section.image_right == 'true' %}
+        row flex-row-reverse
+        {% else %}
+        row
+    {% endif %}
+{% endcapture %}
+
+
+
+<section class="py-4 py-md-6 {{ ic_background_color | strip_newlines }}" {{ sectionTitleId }}   {{ ic_bg_dark_theme }}>
+    <div class="container">
+        <div class="{{ row_direction | strip_newlines }}">
+            <div class="col-auto mb-2 mb-lg-0 mx-auto mx-lg-0 d-flex align-items-center justify-content-center">
+                <svg width="350" height="351" viewBox="0 0 376 376" fill="none" xmlns="http://www.w3.org/2000/svg"> <rect x="8.15942" y="8.57446" width="367.171" height="367.171" rx="183.585" fill="#8FE4DE"></rect> <path d="M123.837 132.354C116.854 132.354 111.2 122.173 111.2 109.608C111.2 97.0436 116.854 86.8623 123.837 86.8623C129.361 86.8623 134.054 93.2409 135.775 102.125" stroke="black" stroke-width="4.81105" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M167.29 132.354C160.307 132.354 154.653 122.173 154.653 109.608C154.653 97.0436 160.307 86.8623 167.29 86.8623C172.813 86.8623 177.506 93.2409 179.228 102.125" stroke="black" stroke-width="4.81105" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M210.751 132.354C203.768 132.354 198.114 122.173 198.114 109.608C198.114 97.0436 203.768 86.8623 210.751 86.8623C216.274 86.8623 220.967 93.2409 222.689 102.125" stroke="black" stroke-width="4.81105" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M254.212 132.354C247.229 132.354 241.575 122.173 241.575 109.608C241.575 97.0436 247.229 86.8623 254.212 86.8623C259.735 86.8623 264.428 93.2409 266.15 102.125" stroke="black" stroke-width="4.81105" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M250.603 109.617H274.82C284.232 109.617 291.861 117.266 291.861 126.703V268.952C291.861 278.388 284.232 286.037 274.82 286.037H102.522C93.1094 286.037 85.4799 278.388 85.4799 268.952V126.694C85.4799 117.257 93.1094 109.608 102.522 109.608H111.191" stroke="black" stroke-width="4.81105" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M207.255 109.617H241.575" stroke="black" stroke-width="4.81105" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M164.056 109.617H198.114" stroke="black" stroke-width="4.81105" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M120.577 109.617H154.652" stroke="black" stroke-width="4.81105" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M100.101 271.212V145.427" stroke="black" stroke-width="4.81105" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M135.592 271.212V145.427" stroke="black" stroke-width="4.81105" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M171.083 271.212V145.427" stroke="black" stroke-width="4.81105" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M206.565 271.212V145.427" stroke="black" stroke-width="4.81105" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M242.055 271.212V145.427" stroke="black" stroke-width="4.81105" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M277.546 271.212V145.427" stroke="black" stroke-width="4.81105" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M100.101 239.766H277.546" stroke="black" stroke-width="4.81105" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M100.101 208.319H277.546" stroke="black" stroke-width="4.81105" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M100.101 176.873H277.546" stroke="black" stroke-width="4.81105" stroke-linecap="round" stroke-linejoin="round"></path> <circle cx="183.585" cy="184" r="181.545" stroke="black" stroke-width="4.07967"></circle> </svg> 
+            </div>
+            <div class="col-lg-7 ms-auto">
+                <div class="d-flex flex-column justify-content-center py-4 h-100">
+                {% if section.headline %}
+                    {% include /snippets/section-headline.html bar_color=section.headline_bar_color headline=section.headline %}
+                {% endif %}
+                {{ section.content }}
+                <p>
+                    <a href="{{ section.meeting_link }}" class="btn btn-black" target="_blank">
+                        {{ section.meeting_cta }}
+                    </a>
+                </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

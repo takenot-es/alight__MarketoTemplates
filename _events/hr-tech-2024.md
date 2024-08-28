@@ -86,4 +86,25 @@ page_sections:
   headline: Are you a broker, carrier, or potential partner?
   content: '<h3 class="strong">Stop by the Alight booth during our dedicated partner hours!</h3><p>Join our broker-focused speed session, “Can Alight Really Offer Employers a Competitive Advantage,” on Wednesday and Thursday from 10:30-10:40. Our broker leaders will be available in the Alight booth each day following the session. Stop by to chat with them, see a demo, and ask questions!</p><p>Our Alight Partner Network leaders will be available in the Alight booth each day following the speed sessions. Stop by to hear what these partners have to offer, see a demo, and ask questions!</p>'
   panel_content: '<h5 class="strong">We’re also excited to feature speed sessions with our partners Pelago and Kashable in the Alight booth.</h5><ul class="list-unstyled p-0 mb-0"><li class="no-icon">11:30 – 11:40 AM Wednesday</li><li class="no-icon">12:00 – 12:10 PM Thursday</li></ul><p>Activating Your Benefits Ecosystem to Deliver the Right Care at the Right Time</p><ul class="list-unstyled p-0 mb-0"><li class="no-icon">3:30 – 3:40 PM Wednesday</li><li class="no-icon">1:30 – 1:40 PM Thursday</li></ul><p>Keeping Employees Healthy by Keeping Them Financially Secure</p>'
+- template: Meeting Request
+  block: meeting-request
+  background_color: yellow
+  title: '1:1 Meetings'
+  headline_bar_color: teal
+  headline: Let's connect!
+  toc_include: true
+  image_right: false
+  content: "<p>Alight helps companies unify their benefits ecosystem across their full spectrum of benefits, leverage unmatched data and expertise for smarter decisions, and enhance the employee experience--while driving greater business efficiency and value across the ecosystem. Schedule a meeting to learn more! </p>"
+  meeting_link:
+  meeting_cta: 'Request a meeting'
+- template: Image Content
+  block: image-content
+  background_color: slate-90
+  title: Giveaway
+  headline_bar_color: yellow
+  headline: Get ready for a chance to win!
+  toc_include: true
+  image_right: true
+  image: https://go.alight.com/rs/777-ERD-451/images/hr-tech-raffle-image.jpg
+  content: "<p class='lead'>Attend one of our Advantage Speed Sessions or our speaking session for a chance to win a Shark® SpeedStyle™ hair dryer or an Apple Watch. Let us scan your badge during any of these sessions and you’ll be entered to win. Don’t miss out!</p>"
 ---
