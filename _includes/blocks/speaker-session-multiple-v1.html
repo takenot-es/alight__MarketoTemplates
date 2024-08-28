@@ -1,0 +1,92 @@
+{% include /snippets/id-func.html %}
+{% include /snippets/dark-mode-sections.html %}
+{% include /snippets/dark-mode-buttons.html %}
+
+
+<section class="speaker-session-multiple-1 bg-slate-05 py-4 py-md-6 {{ ic_background_color | strip_newlines }}" {{ sectionTitleId }}   {{ ic_bg_dark_theme }}>
+    <div class="container-fluid">
+        <div class="container">
+            {% if section.headline %}
+                <div class="row pb-4">
+                    <div class="col-12">
+                        {% include /snippets/section-headline.html bar_bottom="false" bar_color="blue" headline=section.headline %}
+                    </div>
+                </div>
+             {% endif %}
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <!-- Internal Content -->
+                <div class="col-12 rounded py-2 px-2 bg-white">
+                    <div class="row">
+                        <div class="col-12">
+                            {% if section.session_headline %}
+                                <h5>
+                                    <strong>
+                                        {{ section.session_headline }}
+                                    </strong>
+                                </h5>
+                            {% endif %}
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 order-md-2 ms-auto">
+                            <ul class="list-unstyled">
+                                {% for detail in section.session_details %}
+                                <li class="no-icon mb-2">
+                                    <span>
+                                        <strong class="small text-uppercase">
+                                            {{ detail.label }}:
+                                        </strong>
+                                    </span><br>
+                                    {{ detail.content }}
+                                </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                        <div class="col-lg-8">
+                            {{ section.content }}
+                        </div>
+                    </div>
+                    <div class="row py-2">
+                        <div class="col-12 mb-1">
+                            <hr>
+                        </div>
+                        <div class="col-12">
+                            <p class="has-indicator">
+                                speakers
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        {% for speaker in section.speaker_info %}
+                        {% capture speaker-column-width %}
+                            {% if forloop.length > 2 %}
+                                col-lg-4
+                            {% else %}
+                                col-lg-6
+                            {% endif %}
+                        {% endcapture %}
+                        <div class="{{ speaker-column-width }} py-2">
+                            <div class="row align-items-center">
+                                {% if speaker.headshot %}
+                                <div class="col-auto mb-2 mb-lg-0">
+                                    <figure class="speaker-headshot"><img src="{{ speaker.headshot }}" alt="{{ speaker.name }} {{ speaker.title }} headshot"></figure>
+                                </div>
+                                {% endif %}
+                                <div class="col-lg">
+                                    <p class="strong mb-0">{{ speaker.name }}</p>
+                                    <p>{{ speaker.title }}</p>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                <!-- End Internal Content-->
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,27 @@
+{% include /snippets/id-func.html %}
+{% include /snippets/dark-mode-sections.html %}
+{% include /snippets/dark-mode-buttons.html %}
+
+<section class="py-4 py-md-6 bg-slate-05 {{ ic_background_color | strip_newlines }}" {{ sectionTitleId }}   {{ ic_bg_dark_theme }}>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                {% if section.headline %}
+                {% include /snippets/section-headline.html bar_color="teal" headline=section.headline %}
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid mt-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 mb-2 mb-md-0">
+                    {{ section.content }}
+                </div>
+                <div class="col-lg-4 ms-auto rounded bg-white py-2">
+                    {{ section.panel_content }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
