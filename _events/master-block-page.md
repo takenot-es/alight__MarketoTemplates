@@ -16,7 +16,7 @@ page_sections:
   title: Intro Content
   content_one: "<h2>Deliver a singular, personalized benefits experience for every employee</h2>"
   content_two: "<p class='lead'>Alight works with the best-known brands to create a benefits advantage — an opportunity to optimize costs while delivering a world-class benefits experience.</p>"
-- block: quote-contained
+- block: quote-full
   template: Quote
   title: Testimonial
   background_color: slate
@@ -26,11 +26,11 @@ page_sections:
   job_title: 'Design lead | Systems and Brand'
   company: 'Alight Solutions'
   headshot: 'https://go.alight.com/rs/777-ERD-451/images/sampleheadshot.jpg'
-- block: card-slide-through-full
+- block: card-slide-through-contained
   template: Card Slide Through
   title: Proof Points
   fullwidth: 'true'
-  background_color: slate-05
+  background_color: 
   headline: 'Discover the Alight Benefits Advantage™'
   content: '<p class="lead">We partner with 70% of the Fortune 100 and 50% of the Fortune 500 to transform the way they work. We administer benefits for over 35 million people and dependents, manage 200 million interactions annually and $1.2 trillion in assets.</p>'
   cards:
