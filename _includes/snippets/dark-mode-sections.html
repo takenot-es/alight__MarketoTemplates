@@ -1,4 +1,4 @@
-{% assign dark_theme_bg = site.dark_theme_backgrounds %}
+{% assign dark_theme_bg = "black, slate, light-slate, black-90, slate-90" | split: ", " %}
 
 {% capture ic_background_color %}
     bg-{{ section.background_color }}
@@ -8,6 +8,7 @@
     {% for value in dark_theme_bg %}
         {% if section.background_color == value %}
             data-bs-theme="dark"
+            {% break %}
         {% endif %}
     {% endfor %}
 {% endcapture %}

@@ -1,0 +1,25 @@
+<header class="contained-full-image-jumbotron">
+    <div class="background-image" style="background-image: url('{{ section.image }}')">
+        <div class="container-fluid overlay-{{section.overlay_level }}">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7">
+                        <h2 class="display-2">
+                            <em>
+                                {{ section.headline }}
+                            </em>
+                        </h2>
+                        {% if section.cta %}
+                            <p class="mt-md-8 mt-6 mb-0">
+                                <a href="{{ section.cta_url }}" class="btn btn-primary">
+                                    {{ section.cta }}
+                                </a>
+                            </p>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+            {% include /snippets/quarter-arc-lines.svg %}
+        </div>
+    </div>
+</header>

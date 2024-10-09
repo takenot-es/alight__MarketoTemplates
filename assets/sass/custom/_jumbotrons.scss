@@ -107,3 +107,250 @@
     display: flex;
     align-items: center;
 }
+
+
+.split-jumbotron {
+
+    position: relative;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    z-index: 0;
+
+    @media screen and (max-width: $breakpoint-md) {
+        min-height: 85vh;
+    }
+
+    .column {
+        display: flex;
+        align-items: center;
+        @media screen and (max-width: $breakpoint-md) {
+
+            &.content {
+                min-height: 50vh;
+            }
+        }
+    }
+
+    .bg {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 75vw;
+        z-index: -1;
+        border-bottom-right-radius: $section-border-radius;
+        border-top-right-radius: $section-border-radius;
+
+        @media screen and (max-width: $breakpoint-md) {
+            border-radius: 0 0 $section-border-radius $section-border-radius ;
+            width: 100vw;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 25%;
+        }
+
+    }
+
+    figure {
+        max-height: 600px;
+        overflow: hidden;
+        @extend .rounded;
+        margin-left: auto;
+        margin-right: auto;
+
+        @media screen and (max-width: $breakpoint-md) {
+            max-height: 325px;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+    }
+
+}
+
+.full-image-jumbotron {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+
+    .container-fluid {
+        min-height: 90vh;
+        padding-top: $spacer-6;
+        padding-bottom: $spacer-6;
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        &.overlay {
+            &-20 {
+                background-color: rgba($black ,.2);
+            }
+
+            &-30 {
+                background-color: rgba($black ,.3);
+            }
+
+            &-40 {
+                background-color: rgba($black ,.4);
+            }
+
+            &-50 {
+                background-color: rgba($black ,.5);
+            }
+
+            &-60 {
+               background-color: rgba($black ,.6); 
+            }
+
+            &-70 {
+                background-color: rgba($black ,.7);
+            }
+
+            &-80 {
+                background-color: rgba($black ,.8);
+            }
+        }
+    }
+
+    h2 {
+        color: $white;
+    }
+
+    svg {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 400px;
+        fill: none;
+
+        @media screen and (max-width: $breakpoint-md) {
+            width: 200px;
+        }
+        
+        path {
+            stroke: #fff200;
+            stroke-miterlimit: 10;
+            stroke-width: 4px;
+            stroke-dasharray: 2000;
+            animation: quarter-arc-image-jumbotron 5s linear;
+        }
+
+    }
+
+}
+
+@keyframes quarter-arc-image-jumbotron {
+    0% {
+        stroke-dashoffset: 2000;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+.contained-full-image-jumbotron {
+    padding: $spacer;
+
+    .background-image {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        overflow: hidden;
+        border-radius: $border-radius;
+    }
+
+    @media screen and (max-width: $breakpoint-md) {
+        padding: 0;
+
+        .background-image {
+            border-radius: 0;
+            border-bottom-left-radius: $border-radius;
+            border-bottom-right-radius: $border-radius;
+        }
+    }
+
+    .container-fluid {
+        min-height: 90vh;
+        padding-top: $spacer-6;
+        padding-bottom: $spacer-6;
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        &.overlay {
+            &-20 {
+                background-color: rgba($black ,.2);
+            }
+
+            &-30 {
+                background-color: rgba($black ,.3);
+            }
+
+            &-40 {
+                background-color: rgba($black ,.4);
+            }
+
+            &-50 {
+                background-color: rgba($black ,.5);
+            }
+
+            &-60 {
+               background-color: rgba($black ,.6); 
+            }
+
+            &-70 {
+                background-color: rgba($black ,.7);
+            }
+
+            &-80 {
+                background-color: rgba($black ,.8);
+            }
+        }
+    }
+
+    h2 {
+        color: $white;
+    }
+
+    svg {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 400px;
+        fill: none;
+
+        @media screen and (max-width: $breakpoint-md) {
+            width: 200px;
+        }
+        
+        path {
+            stroke: #fff200;
+            stroke-miterlimit: 10;
+            stroke-width: 4px;
+            stroke-dasharray: 2000;
+            animation: quarter-arc-image-jumbotron 5s linear;
+        }
+
+    }
+
+}
+
+@keyframes quarter-arc-image-jumbotron {
+    0% {
+        stroke-dashoffset: 2000;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}

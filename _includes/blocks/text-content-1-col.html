@@ -1,0 +1,31 @@
+{% include /snippets/id-func.html %}
+{% include /snippets/dark-mode-sections.html %}
+{% include /snippets/dark-mode-buttons.html %}
+
+{% capture content_offset %}
+    {% if section.offset == 'null' or section.offset == 'center' or section.offset == null %}
+        col-md-8 mx-auto
+    {% endif %}
+
+    {% if section.offset == 'left' or section.offset == left %}
+        col-md-8 me-auto
+    {% endif %}
+
+    {% if section.offset == 'right' or section.offset == right %}
+        col-md-8 ms-auto
+    {% endif %}
+
+    {% unless section.offset == 'right' or section.offset == 'left' or section.offset == 'center' or section.offset == right or section.offset == left or section.offset == center %}
+        col-md-8 mx-auto
+    {% endunless %}
+{% endcapture %}
+
+<section class="text-content py-4 py-md-6 {{ ic_background_color | strip_newlines }}" {{ sectionTitleId }}   {{ ic_bg_dark_theme }}>
+    <div class="container">
+        <div class="row">
+            <div class="{{ content_offset }}">
+                {{ section.content }}
+            </div>
+        </div>
+    </div>
+</section>

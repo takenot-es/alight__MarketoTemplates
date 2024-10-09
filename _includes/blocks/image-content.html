@@ -34,9 +34,11 @@
                     {% include /snippets/section-headline.html bar_color=section.headline_bar_color headline=section.headline %}
                 {% endif %}
                 {{ section.content }}
+                {% if section.cta %}
                 <p>
                     {{ ic_cta }}
                 </p>
+                {% endif %}
                 </div>
             </div>
         </div>

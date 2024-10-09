@@ -1,1 +1,186 @@
-// Null
+$title-col-ds-width: 100px;
+
+.contained {
+    padding-left: $grid-gutter-width * .5;
+    padding-right: $grid-gutter-width * .5;
+}
+
+
+.three-card-stacked {
+    position: relative;
+
+    // Realign Cards on small screens so they're not full width
+    @media screen and (max-width: $breakpoint-md) {
+        padding-left: $grid-gutter-width * .5;
+        padding-right: $grid-gutter-width * .5;
+    }
+
+    // Start Card Container
+    .card-container {
+
+        //Core Stacked Cards styles
+        .stacked-card {
+            padding: $spacer-6 calc($grid-gutter-width * .5);
+            width: 100%;
+            background-color: $slate;
+            @extend .rounded;
+            display: flex;
+            flex-direction: row;
+
+            @media screen and (max-width: $breakpoint-md) {
+                flex-direction: column;
+            }
+
+            // Title Column styles
+           .title {
+            padding: $grid-gutter-width * .5;
+            width: 100%;
+
+                h3 {
+                    font-size: $h5-font-size;
+                    color: $white;
+                    font-weight: bold;
+                }
+
+                // Rotate title on desktop
+                @media screen and (min-width: $breakpoint-md) {
+                    width: $title-col-ds-width;
+                    display: flex;
+                    justify-content: center;
+                    align-items: start;
+
+                    h3 {
+                        writing-mode: vertical-lr;
+                        transform: rotate(180deg);
+                        margin-bottom: 0;
+                    }
+
+                }
+                // End Title Rotation
+           }
+           // End Title Column
+        }
+        // End core card styles
+
+        // Start Card Rows
+        .card-row {
+
+            //Mobile Card row margin
+            @media screen and (max-width: $breakpoint-md) {
+                margin-bottom: $spacer-4;
+            }
+
+            // Sticky Rows
+            @media screen and (min-width: $breakpoint-md) {
+                position: sticky;
+                top: $spacer-4;
+
+                //Sticky card heights
+                .stacked-card {
+                    min-height: 85vh;
+                }
+
+                //Card One
+                &:nth-of-type(1) {
+                    .stacked-card {
+                        width: 100%;
+                    }
+                }
+
+                // Card Two
+                &:nth-of-type(2) {
+                    .stacked-card {
+                        width: calc(100% - 100px);
+                        background-color: $slate-90;
+                        margin-left: auto;
+                    }
+                }
+
+                //Card Three
+                &:nth-of-type(3) {
+                    .stacked-card {
+                        width: calc(100% - 200px);
+                        background-color: $slate-80;
+                        margin-left: auto;
+                    }
+                }
+
+            }
+        }
+        // End Card Rows
+
+    }
+    // End Card Container
+}
+
+.quote {
+    --quote-marks-color: #{$slate};
+
+    &.contained {
+        padding-left: $grid-gutter-width * .5;
+        padding-right: $grid-gutter-width * .5;
+    }
+
+    .quote-marks {
+        display: flex;
+
+        svg {
+            width: 30px;
+            margin-left: auto;
+            margin-right: auto;
+
+            path {
+               fill: var(--quote-marks-color);
+            }
+
+        }
+    }
+
+    .information {
+        p {
+            margin-bottom: 0;
+        }
+    }
+
+    .headshot {
+        height: 50px;
+        width: 50px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 50rem;
+        margin-right: $spacer;
+    }
+
+}
+
+[data-bs-theme="dark"] {
+    --quote-marks-color: #{$yellow};
+}
+
+.card-slide-through {
+    position: relative;
+
+    .section-container {
+        @media screen and (min-width: $breakpoint-md) {
+            
+            .headline-column {
+                height: 100vh;
+                position: sticky;
+                top: $spacer-4;
+            }
+
+        }
+    }
+
+    [data-bs-theme='dark'] {
+        .info-obj-card {
+            --info-obj-card-bg: #{$slate-90};
+            --info-obj-card-border: #{$slate-80};
+            --info-obj-font-color: #{$white};
+            --info-obj-object-container-bg: #{$slate-100};
+            --info-obj-object-color: #{$yellow};
+        }
+    }
+
+}

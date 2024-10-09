@@ -1,0 +1,27 @@
+{% include /snippets/id-func.html %}
+<section class="three-card-stacked py-md-6 py-4" {{ sectionTitleId }}> 
+    <div class="container card-container">
+        {% for card in section.cards %}
+        <div class="row card-row" id="stacked-card-{{ forloop.index }}">
+            <div class="stacked-card">
+                <div class="title">
+                    <h3>
+                        {{ card.title }}
+                    </h3>
+                </div>
+                <div class="col-md-8 ms-auto">
+                    <p class="text-white">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis exercitationem ipsum animi cupiditate sunt illo aperiam ullam atque possimus dolores aut nobis necessitatibus, nostrum expedita repellendus consequatur magni neque nihil.
+                    </p>
+                    <p class="text-white">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis exercitationem ipsum animi cupiditate sunt illo aperiam ullam atque possimus dolores aut nobis necessitatibus, nostrum expedita repellendus consequatur magni neque nihil.
+                    </p>
+                    <p class="text-white">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis exercitationem ipsum animi cupiditate sunt illo aperiam ullam atque possimus dolores aut nobis necessitatibus, nostrum expedita repellendus consequatur magni neque nihil.
+                    </p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>

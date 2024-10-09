@@ -24,7 +24,7 @@
                     <ul class="row list-unstyled m-0">
                         {% for section in page.page_sections %}
                             {% if section.toc_include == 'true' or section.toc_include == true %}
-                            <li class="col-lg-6 ps-0 
+                            <li class="no-icon col-lg-6 ps-0 
                             {% if forloop.length > 2 and forloop.last != true %} pb-1{% endif %}">
                                 <a href="{{ section.title | downcase | replace: ' ', '-' | prepend: '#'}}">
                                     {{ section.title }}

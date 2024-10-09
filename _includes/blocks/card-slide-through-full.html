@@ -1,0 +1,45 @@
+{% include /snippets/id-func.html %}
+{% include /snippets/dark-mode-sections.html %}
+{% include /snippets/dark-mode-buttons.html %}
+
+<section class="card-slide-through py-4" {{ sectionTitleId }}>
+    <div class="container-fluid rounded py-4 position-relative section-container
+    {{ ic_background_color | strip_newlines }}" {{ ic_bg_dark_theme }}>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 headline-column">
+                    <h2>
+                        {{ section.headline }}
+                    </h2>
+                    {% if section.content %}
+                        {{ section.content }}
+                    {% endif %}
+                </div>
+                <div class="col-md-6 ms-auto">
+                    {% for card in section.cards %}
+                    <div class="info-obj-card">
+                        <div class="obj-container">
+                            {{ card.object }}
+                        </div>
+                        <div class="info-container">
+                            <h5>
+                                <strong>
+                                    {{ card.headline }}
+                                </strong>
+                            </h5>
+                            <p>
+                                {{ card.content }}
+                            </p>
+                            <p>
+                                <a href="{{card.cta_url }}" class="btn btn-primary">
+                                    {{ card.cta }}
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
