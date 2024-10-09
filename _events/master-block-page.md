@@ -6,11 +6,10 @@ page_sections:
   template: Contained Full Image Jumbotron
   title: Contained Full Image Jumbotron
   overlay_level: 60
-  image: '/assets/imgs/GettyImages-1217373072.jpg'
+  image: 'https://go.alight.com/rs/777-ERD-451/images/zh-sample-image.jpg'
   headline: 'A benefits experience your employees will love. The efficiency your business needs.'
   cta: Get your benefits advantage
   cta_url: '/'
-  image: '/assets/imgs/GettyImages-1217373072.jpg'
 - block: text-content-2-col
   template: Content
   title: Intro Content
@@ -26,7 +25,7 @@ page_sections:
   job_title: 'Design lead | Systems and Brand'
   company: 'Alight Solutions'
   headshot: 'https://go.alight.com/rs/777-ERD-451/images/sampleheadshot.jpg'
-- block: card-slide-through-contained
+- block: card-slide-through-full
   template: Card Slide Through
   title: Proof Points
   fullwidth: 'true'
