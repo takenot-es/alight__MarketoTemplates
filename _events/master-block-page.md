@@ -2,23 +2,31 @@
 layout: blocks
 title: Master Block Page
 page_sections:
-- block: jumbotron-full-image
+- block: jumbotron-full-image-full
   template: Contained Full Image Jumbotron
   title: Contained Full Image Jumbotron
   overlay_level: 60
-  image: 'https://go.alight.com/rs/777-ERD-451/images/zh-sample-image.jpg'
-  headline: 'A benefits experience your employees will love. The efficiency your business needs.'
-  cta: Get your benefits advantage
-  cta_url: '/'
+  image: 'https://www.alight.com/getmedia/c78987a6-133f-4cf5-a669-239dea6c961d/GettyImages-1253877148.jpg'
+  headline: 'Employees’ attitudes regarding the 2024 U.S. Presidential Election revealed in Alight’s latest study'
+  cta: Learn more
+  cta_url: '#article-lead-with-table-of-contents'
+- block: intro-article-toc-full
+  template: Article Lead with Table of Contents
+  title: Article Lead with Table of Contents
+  background_color: white
+  toc_headline: 'Table of Contents'
+  content: '<p class="lead">Alight’s upcoming 2024 International Workforce and Wellbeing Mindset Study provides some interesting insights on employees’ attitudes regarding this fall’s election.</p><p>The 2024 U.S. Presidential Election is fast approaching, and there’s little doubt this is one of the most heated battles for the White House in our collective memories. Will voters return former President Donald Trump to the Oval Office or make Vice President Kamala Harris the nation’s first female commander-in-chief? Only the future knows for sure, but in the meantime, people are talking, including employees in the workplace–brick and mortar or virtual.</p><p>While the outcome of the contest is yet to be decided, the level of excitement surrounding the election is unmatched. Nearly three-quarters (73%) of people say they intend to cast their vote, according to the Mindset Study. Given the twists and turns that have occurred in the past several weeks, that number may be even higher now than when the Mindset survey was undertaken in Q2. That might also be the case when it comes to younger voters, who told us they are less likely to vote this election cycle. Since President Joe Biden’s exit from the race, however, polls have found younger generations are more enthusiastic about the election.</p>'
 - block: text-content-2-col
   template: Content
-  title: Intro Content
+  title: Mission
+  toc_include: 'true'
   content_one: "<h2>Deliver a singular, personalized benefits experience for every employee</h2>"
   content_two: "<p class='lead'>Alight works with the best-known brands to create a benefits advantage — an opportunity to optimize costs while delivering a world-class benefits experience.</p>"
 - block: quote-full
   template: Quote
+  toc_include: 'true'
   title: Testimonial
-  background_color: slate
+  background_color: yellow
   fullwidth: 'true'
   content: 'The final product was a grand slam! Our associates loved Chef Sage and the new experience. One of the highest engagements and the least amount of noise we ever had for an Annual Enrollment'
   name: 'Ryan Underwood'
@@ -28,8 +36,9 @@ page_sections:
 - block: card-slide-through-full
   template: Card Slide Through
   title: Proof Points
+  toc_include: 'true'
   fullwidth: 'true'
-  background_color: 
+  background_color: slate
   headline: 'Discover the Alight Benefits Advantage™'
   content: '<p class="lead">We partner with 70% of the Fortune 100 and 50% of the Fortune 500 to transform the way they work. We administer benefits for over 35 million people and dependents, manage 200 million interactions annually and $1.2 trillion in assets.</p>'
   cards:

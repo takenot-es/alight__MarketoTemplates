@@ -1,0 +1,38 @@
+{% include /snippets/id-func.html %}
+{% include /snippets/dark-mode-sections.html %}
+{% include /snippets/dark-mode-buttons.html %}
+
+<section class="py-md-6 py-4 intro-article-toc {{ ic_background_color | strip_newlines }}" {{ sectionTitleId }} {{ ic_bg_dark_theme }}>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 order-lg-2 ms-auto">
+                    <div class="toc-container">
+                        <h4>
+                            <strong>
+                                {{ section.toc_headline }}
+                            </strong>
+                        </h4>
+                        <ul>
+                            {% for section in page.page_sections %}
+                            {% if section.toc_include == 'true' or section.toc_include == true %}
+                            <li class="no-icon intro-article-toc-link ps-0 
+                            {% if forloop.length > 2 and forloop.last != true %} pb-1{% endif %}">
+                                <a href="{{ section.title | downcase | replace: ' ', '-' | prepend: '#'}}">
+                                    <span class="cta-title">
+                                        {{ section.title }}
+                                    </span>
+                                </a>
+                            </li>
+                            {% endif %}
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    {{ section.content }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

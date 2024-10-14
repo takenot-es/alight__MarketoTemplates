@@ -2,7 +2,7 @@
 {% include /snippets/dark-mode-sections.html %}
 {% include /snippets/dark-mode-buttons.html %}
 
-<section class="card-slide-through contained py-4" {{ sectionTitleId }}>
+<section class="card-slide-through contained" {{ sectionTitleId }}>
     <div class="{% if section.fullwidth == 'true' or section.fullwidth == true %}container-fluid  {% else %}container {% endif %} 
     rounded py-4 position-relative section-container
     {{ ic_background_color | strip_newlines }}" {{ ic_bg_dark_theme }}>

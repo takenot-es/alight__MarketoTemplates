@@ -1,0 +1,25 @@
+{% include /snippets/id-func.html %}
+{% include /snippets/dark-mode-sections.html %}
+{% include /snippets/dark-mode-buttons.html %}
+
+<header class="bg-{{ section.lower_backgroud }}">
+    <div class="container-fluid pattern-jumbotron py-4 py-md-6 min-vh-50 d-flex align-items-center {{ ic_background_color | strip_newlines }}" {{ sectionTitleId }} {{ ic_bg_dark_theme }}>
+        <div class="pattern left">
+            {% include /snippets/pattern-trail.svg %}
+        </div>
+        <div class="pattern right">
+            {% include /snippets/pattern-trail.svg %}
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <h2 class="display-2">
+                        <em>
+                            {{ section.headline }}
+                        </em>
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

@@ -354,3 +354,59 @@
         stroke-dashoffset: 0;
     }
 }
+
+$special-colors: (
+    'slate': $slate-90,
+    'yellow': $yellow-50,
+    'white': $slate-05
+);
+
+.pattern-jumbotron {
+    position: relative;
+    overflow: hidden;
+    border-bottom-right-radius: $section-border-radius;
+
+    .pattern {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+
+        svg {
+            height: 100%;
+            fill: $slate-05;
+        }
+
+        &.left {
+            left: -10px;
+        }
+
+        &.right {
+            right: -10px;
+            transform: rotate(180deg);
+
+            @media screen and (max-width:$breakpoint-md) {
+                display: none;
+            }
+
+        }
+
+    }
+
+    .col-md-8 {
+        position: relative;
+        z-index: 10;
+    }
+
+    @each $name, $value in $theme-colors {
+        &.bg-#{$name} {
+            .pattern svg {
+                // Check if the color is in the special map
+                @if map-has-key($special-colors, $name) {
+                    fill: map-get($special-colors, $name);
+                } @else {
+                    fill: lighten($value, 12%);
+                }
+            }
+        }
+    }
+}

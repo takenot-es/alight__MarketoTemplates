@@ -2,10 +2,11 @@
 {% include /snippets/dark-mode-sections.html %}
 {% include /snippets/dark-mode-buttons.html %}
 
-<section class="quote contained py-4" {{ sectionTitleId }}   {{ ic_bg_dark_theme }}>
-    <div class="{% if section.fullwidth == 'true' or section.fullwidth == true %}container-fluid  {% else %}container {% endif %} 
-    
-    rounded py-4 {{ ic_background_color | strip_newlines }}">
+<section class="contained" {{ sectionTitleId }}   {{ ic_bg_dark_theme }}>
+    <div class="quote
+     {% if section.fullwidth == 'true' or section.fullwidth == true %}  container-fluid  {% else %}  container {% endif %}
+     
+     rounded py-4 {{ ic_background_color | strip_newlines }}">
         <div class="row rounded py-4">
             <div class="col-12 quote-marks">
                 <svg viewBox="0 0 117 91" fill="none" xmlns="http://www.w3.org/2000/svg">
