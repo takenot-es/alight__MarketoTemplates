@@ -5,6 +5,13 @@
 <section class="contained">
     <div class="container-fluid intro-article-toc py-md-6 py-4 rounded {{ ic_background_color | strip_newlines }}" {{ sectionTitleId }} {{ ic_bg_dark_theme }}>
         <div class="container">
+            {% if section.headline %}
+                <div class="row">
+                    <div class="col-12 pb-4 mb-4">
+                        {% include /snippets/section-headline.html bar_bottom='false' bar_color="teal" headline=section.headline %}
+                    </div>
+                </div>
+            {% endif %}
             <div class="row">
                 <div class="col-lg-4 order-lg-2 ms-auto">
                     <div class="toc-container">
