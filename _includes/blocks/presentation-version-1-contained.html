@@ -1,0 +1,118 @@
+{% include /snippets/id-func.html %}
+{% include /snippets/dark-mode-sections.html %}
+{% include /snippets/dark-mode-buttons.html %}
+
+{% capture fullwidth %}
+    {% if section.fullwidth == false or section.fullwidth == 'false' %}
+        container
+    {% else %}
+        container-fluid
+    {% endif %}
+{% endcapture %}
+
+
+<section class="presentation-version-1 contained">
+    <div class="{{ fullwidth }} rounded bg-{{ section.background_color }} py-4 py-md-6" {{ sectionTitleId }}   {{ ic_bg_dark_theme }}>
+        {% if section.headline %}
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 pb-2">
+                        {% include /snippets/section-headline.html bar_bottom='false' bar_color="yellow" headline=section.headline %}
+                    </div>
+                </div>
+            </div>
+        {% endif %}
+        {% if section.subheadline %}
+        <div class="container mb-4">
+            <div class="row">
+                <div class="col-md-10">
+                    <h4>
+                        <strong>
+                            {{ section.subheadline }}
+                        </strong>
+                    </h4>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+        <div class="container">
+            <div class="row">
+                <div class="col-12 presentation-information rounded">
+                    <div class="container">
+                        <div class="row information">
+                            {% for item in section.information %}
+                            <div class="col-md-4 {% if forloop.last %}{% else %}mb-2 mb-md-0{% endif %}">
+                                <p class="small text-uppercase mb-0">
+                                    <strong>
+                                        {{ item.label }}
+                                    </strong>
+                                </p>
+                                <p class="lead mb-0">
+                                    <strong>
+                                        {{ item.content }}
+                                    </strong>
+                                </p>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    <div class="container content">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="content">
+                                    {{ section.content }}
+                                </div>
+                                {% if section.content_panel %}
+                                    <div class="content-panel rounded">
+                                        {{ section.content_panel }}
+                                        {% if section.cta %}
+                                            <p class="mt-2 mb-0">
+                                                <a href="{{ section.cta_link }}" class="btn btn-yellow">
+                                                    {{ section.cta }}
+                                                </a>
+                                            </p>
+                                        {% endif %}
+                                    </div>
+                                {% endif %}
+                            </div>
+                            <div class="col-md-4 ms-auto mt-2 mt-md-0">
+                                {% assign speaker_count = section.speakers | size %}
+                                <p class="small text-uppercase mb-2">
+                                    <strong>
+                                        {% if speaker_count > 1 %}
+                                        Speakers
+                                            {% else %}
+                                        Speaker
+                                        {% endif %}
+                                    </strong>
+                                </p>
+                                {% for speaker in section.speakers %}
+                                <div class="row align-items-center 
+                                {% unless forloop.last %} mb-2 {% endunless %} {% if forloop.index > 1 %} speaker-border py-2 {% endif %}">
+                                    {% if speaker.headshot %}
+                                    <div class="col-auto mb-2 mb-md-0">
+                                        <figure class="speaker-headshot">
+                                            <img src="{{ speaker.headshot }}" alt="{{ speaker.name }} headshot">
+                                        </figure>
+                                    </div>
+                                    {% endif %}
+                                    <div class="col-md col-auto">
+                                        <p class="mb-0">
+                                            <strong>
+                                                {{ speaker.name }}
+                                            </strong>
+                                        </p>
+                                        <p class="mb-0">
+                                            {{ speaker.information }}
+                                        </p>
+                                    </div>
+                                </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

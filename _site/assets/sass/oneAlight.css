@@ -2883,6 +2883,24 @@ textarea.form-control-lg { min-height: calc(1.5em + 1rem + calc(var(--bs-border-
 
 .intro-article-toc[data-bs-theme='dark'] { --toc-container-bg: #27363D; --toc-container-border: #3E4D53; --toc-link-color: #FFFFFF; --toc-cta-bar: #3E4D53; --toc-cta-bar-hover: #FFF200; }
 
+.presentation-version-1 { --presentation-information-bg: #F3F4F4; --presentation-information-border: #E7E9EA; --presentation-content-panel-bg: #FFFFFF; --presentation-content-panel-boder: #E7E9EA; --presentation-content-color: #000000; }
+
+.presentation-version-1 .presentation-information { background-color: var(--presentation-information-bg); border: 1px solid var(--presentation-information-border); padding-top: 1.5rem; padding-bottom: 1.5rem; }
+
+.presentation-version-1 .presentation-information .information { padding-bottom: 1.5rem; border-bottom: 1px solid var(--presentation-information-border); }
+
+.presentation-version-1 .presentation-information .content { padding-top: 1.5rem; padding-bottom: 1.5rem; }
+
+.presentation-version-1 .presentation-information .speaker-border { border-top: 1px solid var(--presentation-information-border); }
+
+.presentation-version-1 .presentation-information .content-panel { padding: 1.5rem; border: 1px solid var(--presentation-content-panel-boder); background: var(--presentation-content-panel-bg); }
+
+.presentation-version-1 .presentation-information .content-panel p { color: var(--presentation-content-color); }
+
+.presentation-version-1 .bg-light, .presentation-version-1 .bg-slate-05 { --presentation-information-bg: #FFFFFF; --presentation-information-border: #E7E9EA; --presentation-content-panel-bg: #F3F4F4; --presentation-content-panel-boder: #E7E9EA; --presentation-content-color: #000000; }
+
+.presentation-version-1 [data-bs-theme='dark'] { --presentation-information-bg: #27363D; --presentation-information-border: #3E4D53; --presentation-content-panel-bg: #0A2029; --presentation-content-panel-boder: #3E4D53; --presentation-content-color: #FFFFFF; }
+
 .circular-figure { display: block; border-radius: 100%; overflow: hidden; margin-bottom: 0; padding: 0; }
 
 .circular-figure img { height: 100%; width: 100%; display: block; object-fit: cover; object-position: center; }

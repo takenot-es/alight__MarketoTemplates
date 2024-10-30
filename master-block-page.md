@@ -10,22 +10,42 @@ page_sections:
   headline: 'Employees’ attitudes regarding the 2024 U.S. Presidential Election revealed in Alight’s latest study'
   cta: Learn more
   cta_url: '#article-lead-with-table-of-contents'
-- block: spacer
-  background_color: yellow
-  level: 10
 - block: intro-article-toc-full
   template: Article Lead with Table of Contents
   title: Article Lead with Table of Contents
-  background_color: slate
+  background_color: white
   toc_headline: 'Table of Contents'
   headline: '2024 International Workforce and Wellbeing Mindset Study'
   content: '<p class="lead">Alight’s upcoming 2024 International Workforce and Wellbeing Mindset Study provides some interesting insights on employees’ attitudes regarding this fall’s election.</p><p>The 2024 U.S. Presidential Election is fast approaching, and there’s little doubt this is one of the most heated battles for the White House in our collective memories. Will voters return former President Donald Trump to the Oval Office or make Vice President Kamala Harris the nation’s first female commander-in-chief? Only the future knows for sure, but in the meantime, people are talking, including employees in the workplace–brick and mortar or virtual.</p><p>While the outcome of the contest is yet to be decided, the level of excitement surrounding the election is unmatched. Nearly three-quarters (73%) of people say they intend to cast their vote, according to the Mindset Study. Given the twists and turns that have occurred in the past several weeks, that number may be even higher now than when the Mindset survey was undertaken in Q2. That might also be the case when it comes to younger voters, who told us they are less likely to vote this election cycle. Since President Joe Biden’s exit from the race, however, polls have found younger generations are more enthusiastic about the election.</p>'
-- block: text-content-2-col
-  template: Content
-  title: Mission
+- block: presentation-version-1-full
+  template: Multiple Speaker Presentation
+  title: Presentation
+  fullwidth: 'true'
   toc_include: 'true'
-  content_one: "<h2>Deliver a singular, personalized benefits experience for every employee</h2>"
-  content_two: "<p class='lead'>Alight works with the best-known brands to create a benefits advantage — an opportunity to optimize costs while delivering a world-class benefits experience.</p>"
+  background_color: slate
+  headline: 'This is the presentation block here'
+  subheadline: 'Leveraging AI to unlock employee wellbeing—and prove it'
+  information:
+  - label: 'Label'
+    content: 'Some content goes here'
+  - label: 'Label'
+    content: 'Some content goes here'
+  - label: 'Label'
+    content: 'Some content goes here'
+  content: '<p>In this era of the employee, recruiting and retaining top talent depends on how an employer sets itself apart. According to recent research, more than one-in-three (35%) people say that employer wellbeing benefits and programs make the company more attractive to potential employees.</p>'
+  content_panel: '<p>Sign up for a live demo and join our session to see how using personalization and AI can gauge the efficacy of your HR programs, improve effectiveness, and unlock value for your people and your business.</p>'
+  cta: Register now
+  cta_link: '/'
+  speakers:
+  - name: 'Sample Namething'
+    headshot: 'https://go.alight.com/rs/777-ERD-451/images/sampleheadshot.jpg'
+    information: 'Vice President, Global Payroll Solutions, Alight Solutions'
+  - name: 'Sample Namething'
+    headshot: 'https://go.alight.com/rs/777-ERD-451/images/sampleheadshot.jpg'
+    information: 'Vice President, Global Payroll Solutions, Alight Solutions'
+  - name: 'Sample Namething'
+    headshot: 'https://go.alight.com/rs/777-ERD-451/images/sampleheadshot.jpg'
+    information: 'Vice President, Global Payroll Solutions, Alight Solutions'
 - block: quote-full
   template: Quote
   toc_include: 'true'
